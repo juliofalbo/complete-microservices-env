@@ -31,7 +31,8 @@ This is a whole environment of a Microservices Architecture using Spring Cloud, 
 | Auth Microservice | 8300, 8301, 8302, ... |
 | RabbitMQ | 5672, 5673 |
 | RabbitMQ Admin UI | 15672, 15673 |
-| Postgres | 5432, 5433 |
+| Postgres | 5432 |
+| Postgres ReadOnly Replica| 5433 |
 | Grafana | 3000 |
 | Prometheus | 9090 |
 | Netflix Eureka Naming Server | 8761 |
