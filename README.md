@@ -8,54 +8,35 @@ There are thousands of definitions out there about what are microservices, but t
 >**James Lewis and Martin Fowler**
 
 # What is this?
-This is a POC of a Microservices Architecture using Spring Cloud.
+This is a whole environment of a Microservices Architecture using Spring Cloud, Grafana, Prometheus, Postgres Replication Strategy and RabbitMQ.
 
 ## Stack
-- **Spring Cloud Configuration Server** with a **git repository**
+- **RabbitMQ** as a Message Broker
 - **Feign** to create REST Clients
 - **Ribbon** to Client Side Load Balance
 - **Eureka** to a Naming Server
 - **Zuul** to a API Gateway
-- **Sleuth** and **Zipkin** to a Distributed Tracing, using **RabbitMQ** for save logs
+- **Sleuth** and **Zipkin** to a Distributed Tracing
 - **Hystrix** to a Fault Tolerance
-
+- **Prometheus** as a Metrics Collector
+- **Grafana** as Metrics Analytics and UI
+- **Postgres** as Database
 
 ## Ports
 
 |     Application       |     Port          |
 | ------------- | ------------- |
-| Copom Microservice | 8080, 8081, ... |
-| Central Bank Microservice | 8000, 8001, 8002, ..  |
-| Falbo Bank Microservice | 8100, 8101, 8102, ... |
-| Arruzzo Bank Microservice | 8200, 8201, 8202, ... |
+| Searching Microservice | 8080, 8081, ... |
+| Booking Microservice | 8000, 8001, 8002, ..  |
 | Auth Microservice | 8300, 8301, 8302, ... |
-| Spring Cloud Config Server | 8888 |
+| RabbitMQ | 5672, 5673 |
+| RabbitMQ Admin UI | 15672, 15673 |
+| Postgres | 5432, 5433 |
+| Grafana | 3000 |
+| Prometheus | 9090 |
 | Netflix Eureka Naming Server | 8761 |
 | Netflix Zuul API Gateway Server | 8765 |
 | Zipkin Distributed Tracing Server | 9411 |
-
-
-## git-localconfig-repo
-When cloning the project, the git-localconfig-repo project must be linked to the spring-cloud-config-server project.
-If you use IntelliJ, it is quite simple to do this. Just go to the menu **File > Project Structure**. To do this, just open your **spring-cloud-config-server** project and click **+ Add Root Content** and choose a folder **git-localconfig-repo**.
-
-![ContentRoot](https://github.com/juliofalbo/microservices-with-spring-cloud/blob/master/contentroot.png?raw=true)
-
-
-When you do this, you will need to create the **copom.properties**, **copom-dev.properties**, **copom-qa.properties**, **copom-prod.properties** files as shown in the image below.
-
-![gitlocalconfig](https://github.com/juliofalbo/microservices-with-spring-cloud/blob/master/gitlocalconfig.png?raw=true)
-
-### Remember that it is necessary to start a local repository with the git init command
-
-## Zipkin
-To run the zipkin server with RabbitMQ config, run this code:
-
-    RABBIT_URI=amqp://localhost java -jar zipkin.jar
-
-
-## Architecture - In Progress
-![Architecture](https://github.com/juliofalbo/microservices-with-spring-cloud/blob/master/arch3.jpeg?raw=true)
 
 ## References
 

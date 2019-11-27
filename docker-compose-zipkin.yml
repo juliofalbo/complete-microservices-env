@@ -1,0 +1,17 @@
+# https://docs.docker.com/compose/compose-file/
+version: "3.6"
+
+# https://docs.docker.com/compose/compose-file/#networks
+networks:
+  rabbitmq-prometheus:
+
+services:
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      - "9411:9411"
+    environment:
+      - "RABBIT_URI=amqp://guest:guest@rabbitmq-zipkin:5672"
+    networks:
+      - "rabbitmq-prometheus"
