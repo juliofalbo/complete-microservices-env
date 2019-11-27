@@ -9,6 +9,7 @@ networks:
 volumes:
   rabbitmq-prometheus_prometheus:
   rabbitmq-prometheus_grafana:
+  log_volume:
   postgresql_master_data:
     driver: local
 
@@ -131,7 +132,7 @@ services:
       - POSTGRESQL_MASTER_PORT_NUMBER=5432
       - ALLOW_EMPTY_PASSWORD=yes
   postgresql-master-exporter:
-    image: wrouesnel/postgres_exporter
+    image: wrouesnel/postgres_exporter:v0.8.0
     networks:
       - "rabbitmq-prometheus"
     ports:
@@ -142,7 +143,7 @@ services:
     depends_on:
       - postgresql-readonly
   postgresql-slave-exporter:
-    image: wrouesnel/postgres_exporter
+    image: wrouesnel/postgres_exporter:v0.8.0
     networks:
       - "rabbitmq-prometheus"
     ports:
@@ -152,3 +153,27 @@ services:
       - DATA_SOURCE_NAME=postgresql://readonly:readonly@postgresql-readonly:5432/booking?sslmode=disable
     depends_on:
       - postgresql-readonly
+  splunk:
+    image: splunk/splunk:7.3.0
+    hostname: splunk
+    environment:
+      - SPLUNK_START_ARGS=--accept-license
+      - SPLUNK_USER=root
+      - SPLUNK_ENABLE_LISTEN=9997
+      - SPLUNK_PASSWORD=password
+    ports:
+      - "8000:8000"
+  splunkforwarder:
+    image: splunk/universalforwarder:7.3.0
+    hostname: splunkforwarder
+    environment:
+      - SPLUNK_START_ARGS=--accept-license --answer-yes
+      - SPLUNK_STANDALONE_URL=splunk:9997
+      - SPLUNK_USER=root
+      - SPLUNK_ADD=monitor /logs
+      - SPLUNK_PASSWORD=password
+    restart: always
+    depends_on:
+      - splunk
+    volumes:
+      - log_volume:/logs

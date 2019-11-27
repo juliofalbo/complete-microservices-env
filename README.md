@@ -21,6 +21,7 @@ This is a whole environment of a Microservices Architecture using Spring Cloud, 
 - **Prometheus** as a Metrics Collector
 - **Grafana** as Metrics Analytics and UI
 - **Postgres** as Database
+- **Flyway** as Database Migration Tool
 
 ## Ports
 

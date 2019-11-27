@@ -19,8 +19,10 @@ print_green "Starting the Environment creation:";
 print_green "- Grafana";
 print_green "- Prometheus";
 print_green "- RabbitMQ Cluster";
+print_green "- Splunk";
+print_green "- Zipikn";
 print_green "- Postgres";
-print_green "- Cadvisor";
+print_green "- CAdvisor";
 
 docker-compose up -d;
 
@@ -36,6 +38,15 @@ until $(curl --output /dev/null --silent --head --fail http://localhost:15692/me
     sleep 5
 done
 
-echo "Starting Zipikn";
+echo;
+print_green "Starting Zipikn";
+echo;
 
 docker-compose -f docker-compose-zipkin.yml up -d;
+
+print_green "Waiting Splunk setup";
+
+until $(curl --output /dev/null --silent --head --fail http://localhost:8000); do
+    printf '.'
+    sleep 5
+done
