@@ -69,4 +69,4 @@ print_blue "Waiting Eureka startup";
 print_green "Eureka is running";
 echo;
 
-docker-compose -f docker-compose-services.yml up;
+docker-compose -f docker-compose-services.yml up -d;
