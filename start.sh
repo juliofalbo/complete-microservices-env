@@ -26,7 +26,7 @@ echo
 if [[ "$BUILD" = true ]] ; then
     print_blue "Starting docker build"
     echo;
-    docker-compose -f docker-compose-services.yml build;
+    ./build.sh
 fi
 
 print_blue "Starting the Environment SetUp";
