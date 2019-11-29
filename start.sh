@@ -1,11 +1,17 @@
 #!/usr/bin/env bash
 
+BUILD=$1;
+
 function print_green() {
     echo -e "\e[32m$1\e[0m"
 }
 
 function print_error() {
     echo -e "\e[31m[x] $1\e[0m"
+}
+
+function print_blue() {
+    echo -e "\e[34m$1\e[0m"
 }
 
 print_green "███████╗███████╗████████╗██╗   ██╗██████╗ "
@@ -15,38 +21,52 @@ print_green "╚════██║██╔══╝     ██║   ██�
 print_green "███████║███████╗   ██║   ╚██████╔╝██║     "
 print_green "╚══════╝╚══════╝   ╚═╝    ╚═════╝ ╚═╝     "
 echo
-print_green "Starting the Environment creation:";
-print_green "- Grafana";
-print_green "- Prometheus";
-print_green "- RabbitMQ Cluster";
-print_green "- Splunk";
-print_green "- Zipikn";
-print_green "- Postgres";
-print_green "- CAdvisor";
+
+
+if [[ "$BUILD" = true ]] ; then
+    print_blue "Starting docker build"
+    echo;
+    docker-compose -f docker-compose-services.yml build;
+fi
+
+print_blue "Starting the Environment SetUp";
+print_blue "- Grafana";
+print_blue "- Prometheus";
+print_blue "- RabbitMQ Cluster";
+print_blue "- Splunk";
+print_blue "- Postgres";
+print_blue "- CAdvisor";
 
 docker-compose up -d;
 
-print_green "Waiting the RabbitMQ Cluster creation";
+print_blue "Waiting the RabbitMQ Cluster creation";
 
-until $(curl --output /dev/null --silent --head --fail http://localhost:15693/metrics); do
-    printf '.'
-    sleep 5
-done
+./wait.sh http://localhost:15692/metrics
+./wait.sh http://localhost:15693/metrics
 
-until $(curl --output /dev/null --silent --head --fail http://localhost:15692/metrics); do
-    printf '.'
-    sleep 5
-done
-
-echo;
-print_green "Starting Zipikn";
+print_green "RabbitMQ Cluster is running";
 echo;
 
-docker-compose -f docker-compose-zipkin.yml up -d;
+print_blue "Waiting Splunk setup";
 
-print_green "Waiting Splunk setup";
+./wait.sh http://localhost:8000
 
-until $(curl --output /dev/null --silent --head --fail http://localhost:8000); do
-    printf '.'
-    sleep 5
-done
+print_green "Splunk is running";
+echo;
+
+print_blue "Starting Zipkin and Eureka";
+echo;
+
+docker-compose -f docker-compose-zipkin-eureka.yml up -d;
+
+print_green "Zipkin and Eureka is created";
+echo;
+
+print_blue "Waiting Eureka startup";
+
+./wait.sh http://localhost:8761/actuator/health
+
+print_green "Eureka is running";
+echo;
+
+docker-compose -f docker-compose-services.yml up;

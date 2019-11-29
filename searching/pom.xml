@@ -21,7 +21,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>12</java.version>
+        <java.version>11</java.version>
         <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
         <org.flywaydb.version>5.2.1</org.flywaydb.version>
         <org.postgresql.version>42.2.5</org.postgresql.version>

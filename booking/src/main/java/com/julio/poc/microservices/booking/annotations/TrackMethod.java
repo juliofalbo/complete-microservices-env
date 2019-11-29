@@ -7,8 +7,6 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface PopulatePortOnObjectResponse {
-
-    String fieldName() default "port";
+public @interface TrackMethod {
 
 }

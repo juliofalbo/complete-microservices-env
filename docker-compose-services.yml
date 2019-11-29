@@ -1,0 +1,26 @@
+# https://docs.docker.com/compose/compose-file/
+version: "3.6"
+
+# https://docs.docker.com/compose/compose-file/#networks
+networks:
+  rabbitmq-prometheus:
+
+# https://docs.docker.com/compose/compose-file/#volumes
+volumes:
+  log_volume:
+
+services:
+  booking:
+    container_name: booking
+    build:
+      context: ./booking
+      dockerfile: Dockerfile
+    ports:
+      - "8100:8100"
+    environment:
+      - "SPRING_PROFILES_ACTIVE=prod"
+      - "LOGGING_FILE=/logs/booking-application.log"
+    networks:
+      - "rabbitmq-prometheus"
+    volumes:
+      - log_volume:/logs

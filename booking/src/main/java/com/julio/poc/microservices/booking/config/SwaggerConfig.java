@@ -17,10 +17,10 @@ import java.util.Collections;
 public class SwaggerConfig {
 
 	public static final Contact DEFAULT_CONTACT = new Contact(
-			"Julio Falbo", "http://www.juliofalbo.tech", "julio.falbo.rj@gmail.com");
+			"Julio Falbo", "http://www.medium.com/@julio.falbo", "julio.falbo.rj@gmail.com");
 	
 	public static final ApiInfo DEFAULT_API_INFO = new ApiInfo(
-			"POC Restful API", "Testing some features", "1.0",
+			"Hotel Management System API", "Microservices Concepts", "1.0",
 			"urn:tos", DEFAULT_CONTACT,
 			"Apache 2.0", "http://www.apache.org/licenses/LICENSE-2.0", Collections.emptyList());
 
@@ -28,7 +28,7 @@ public class SwaggerConfig {
 	public Docket api() {
 		return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.julio.poc.microservices.searching.resources")).paths(PathSelectors.any())
+                .apis(RequestHandlerSelectors.basePackage("com.julio.poc.microservices.booking.resources")).paths(PathSelectors.any())
                 .build()
                 .apiInfo(DEFAULT_API_INFO);
 	}

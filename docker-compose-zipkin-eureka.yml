@@ -1,0 +1,34 @@
+# https://docs.docker.com/compose/compose-file/
+version: "3.6"
+
+# https://docs.docker.com/compose/compose-file/#networks
+networks:
+  rabbitmq-prometheus:
+
+volumes:
+  log_volume:
+
+services:
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      - "9411:9411"
+    environment:
+      - "RABBIT_URI=amqp://guest:guest@rabbitmq-zipkin:5672"
+    networks:
+      - "rabbitmq-prometheus"
+  eureka:
+    container_name: eureka
+    build:
+      context: ./netflix-eureka-naming-server
+      dockerfile: Dockerfile
+    ports:
+      - "8761:8761"
+    environment:
+      - "SPRING_PROFILES_ACTIVE=prod"
+      - "LOGGING_FILE=/logs/eureka-application.log"
+    networks:
+      - "rabbitmq-prometheus"
+    volumes:
+      - log_volume:/logs
