@@ -5,5 +5,5 @@ RUN mvn -f /usr/src/booking/pom.xml clean package -Dmaven.test.skip package
 
 FROM gcr.io/distroless/java:11
 COPY --from=build /usr/src/booking/target/booking-0.0.1-SNAPSHOT.jar /usr/booking/booking-0.0.1-SNAPSHOT.jar
-EXPOSE 8761
+EXPOSE 8100
 ENTRYPOINT [ "java", "-jar", "/usr/booking/booking-0.0.1-SNAPSHOT.jar" ]

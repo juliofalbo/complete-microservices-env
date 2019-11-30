@@ -24,3 +24,17 @@ services:
       - "rabbitmq-prometheus"
     volumes:
       - log_volume:/logs
+  searching:
+    container_name: searching
+    build:
+      context: ./searching
+      dockerfile: Dockerfile
+    ports:
+      - "8200:8200"
+    environment:
+      - "SPRING_PROFILES_ACTIVE=prod"
+      - "LOGGING_FILE=/logs/searching-application.log"
+    networks:
+      - "rabbitmq-prometheus"
+    volumes:
+      - log_volume:/logs
