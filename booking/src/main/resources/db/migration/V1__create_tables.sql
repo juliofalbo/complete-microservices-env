@@ -8,12 +8,18 @@ CREATE TABLE rooms (
 );
 
 CREATE TABLE bookings (
+   id UUID PRIMARY KEY,
    id_room UUID NOT NULL REFERENCES rooms(id),
    guest_email TEXT NOT NULL,
-   start_date DATE NOT NULL,
-   end_date DATE NOT NULL,
    creation_date TIMESTAMP NOT NULL,
    last_update TIMESTAMP,
-   version INTEGER,
-   PRIMARY KEY(id_room, start_date, end_date)
+   version INTEGER
+);
+
+CREATE TABLE booking_dates (
+      id UUID PRIMARY KEY,
+      id_booking UUID NOT NULL REFERENCES bookings(id),
+      date DATE NOT NULL,
+      version INTEGER,
+      UNIQUE (id_booking, date)
 );

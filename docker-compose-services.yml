@@ -10,8 +10,8 @@ volumes:
   log_volume:
 
 services:
-  booking:
-    container_name: booking
+  booking-one: &booking
+    container_name: booking-one
     build:
       context: ./booking
       dockerfile: Dockerfile
@@ -24,6 +24,11 @@ services:
       - "rabbitmq-prometheus"
     volumes:
       - log_volume:/logs
+  booking-two:
+    <<: *booking
+    container_name: booking-two
+    ports:
+      - "8101:8100"
   searching:
     container_name: searching
     build:

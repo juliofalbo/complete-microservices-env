@@ -1,13 +1,13 @@
 package com.julio.poc.microservices.booking.exception;
 
-public class ConflictElementException extends RuntimeException {
+public class ValidationException extends RuntimeException {
     private static final long serialVersionUID = 6769829250639411880L;
 
-    public ConflictElementException() {
+    public ValidationException() {
         super();
     }
 
-    public ConflictElementException(String s) {
+    public ValidationException(String s) {
         super(s);
     }
 }

@@ -138,6 +138,12 @@
             <version>6.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.tradeshift</groupId>
+            <artifactId>spring-rabbitmq-tuning-lib</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+
     </dependencies>
 
     <dependencyManagement>

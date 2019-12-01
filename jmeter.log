@@ -1,0 +1,1921 @@
+2019-12-01 00:29:08,357 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2019-12-01 00:29:08,386 INFO o.a.j.JMeter: Loading user properties from: /usr/local/Cellar/jmeter/5.1.1/libexec/bin/user.properties
+2019-12-01 00:29:08,387 INFO o.a.j.JMeter: Loading system properties from: /usr/local/Cellar/jmeter/5.1.1/libexec/bin/system.properties
+2019-12-01 00:29:08,393 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2019-12-01 00:29:08,393 INFO o.a.j.JMeter: Version 5.1.1 r1855137
+2019-12-01 00:29:08,393 INFO o.a.j.JMeter: java.version=10.0.2
+2019-12-01 00:29:08,394 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2019-12-01 00:29:08,394 INFO o.a.j.JMeter: os.name=Mac OS X
+2019-12-01 00:29:08,394 INFO o.a.j.JMeter: os.arch=x86_64
+2019-12-01 00:29:08,394 INFO o.a.j.JMeter: os.version=10.14.6
+2019-12-01 00:29:08,394 INFO o.a.j.JMeter: file.encoding=UTF-8
+2019-12-01 00:29:08,394 INFO o.a.j.JMeter: java.awt.headless=null
+2019-12-01 00:29:08,394 INFO o.a.j.JMeter: Max memory     =1073741824
+2019-12-01 00:29:08,394 INFO o.a.j.JMeter: Available Processors =12
+2019-12-01 00:29:08,401 INFO o.a.j.JMeter: Default Locale=English (EN)
+2019-12-01 00:29:08,401 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2019-12-01 00:29:08,401 INFO o.a.j.JMeter: JMeterHome=/usr/local/Cellar/jmeter/5.1.1/libexec
+2019-12-01 00:29:08,401 INFO o.a.j.JMeter: user.dir  =/Users/juliofalbo/workspace/microservices-with-spring-cloud
+2019-12-01 00:29:08,401 INFO o.a.j.JMeter: PWD       =/Users/juliofalbo/workspace/microservices-with-spring-cloud
+2019-12-01 00:29:08,404 INFO o.a.j.JMeter: IP: 192.168.1.64 Name: c02y60kujgh8-c FullName: c02y60kujgh8-c.lan
+2019-12-01 00:29:10,101 INFO o.a.j.g.a.LookAndFeelCommand: Installing Darcula LAF
+2019-12-01 00:29:10,109 INFO o.a.j.g.a.LookAndFeelCommand: Using look and feel: com.bulenkov.darcula.DarculaLaf [Darcula]
+2019-12-01 00:29:10,110 INFO o.a.j.JMeter: Setting LAF to: com.bulenkov.darcula.DarculaLaf
+2019-12-01 00:29:10,195 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2019-12-01 00:29:11,021 WARN o.j.r.PluginManager: Found JAR conflict: /usr/local/Cellar/jmeter/5.1.1/libexec/lib/asm-7.0.jar and /usr/local/Cellar/jmeter/5.1.1/libexec/lib/asm-5.0.3.jar
+2019-12-01 00:29:11,022 WARN o.j.r.PluginManager: Found JAR conflict: /usr/local/Cellar/jmeter/5.1.1/libexec/lib/commons-beanutils-1.8.3.jar and /usr/local/Cellar/jmeter/5.1.1/libexec/lib/commons-beanutils-1.7.0.jar
+2019-12-01 00:29:11,023 WARN o.j.r.PluginManager: Found JAR conflict: /usr/local/Cellar/jmeter/5.1.1/libexec/lib/dnsjava-2.1.8.jar and /usr/local/Cellar/jmeter/5.1.1/libexec/lib/dnsjava-2.1.7.jar
+2019-12-01 00:29:11,023 WARN o.j.r.PluginManager: Found JAR conflict: /usr/local/Cellar/jmeter/5.1.1/libexec/lib/guava-19.0.jar and /usr/local/Cellar/jmeter/5.1.1/libexec/lib/guava-11.0.2.jar
+2019-12-01 00:29:11,023 WARN o.j.r.PluginManager: Found JAR conflict: /usr/local/Cellar/jmeter/5.1.1/libexec/lib/httpclient-4.5.jar and /usr/local/Cellar/jmeter/5.1.1/libexec/lib/httpclient-4.5.7.jar
+2019-12-01 00:29:11,023 WARN o.j.r.PluginManager: Found JAR conflict: /usr/local/Cellar/jmeter/5.1.1/libexec/lib/httpcore-4.4.11.jar and /usr/local/Cellar/jmeter/5.1.1/libexec/lib/httpcore-4.4.1.jar
+2019-12-01 00:29:11,023 WARN o.j.r.PluginManager: Found JAR conflict: /usr/local/Cellar/jmeter/5.1.1/libexec/lib/httpmime-4.5.jar and /usr/local/Cellar/jmeter/5.1.1/libexec/lib/httpmime-4.5.7.jar
+2019-12-01 00:29:11,023 WARN o.j.r.PluginManager: Found JAR conflict: /usr/local/Cellar/jmeter/5.1.1/libexec/lib/json-path-2.4.0.jar and /usr/local/Cellar/jmeter/5.1.1/libexec/lib/json-path-2.1.0.jar
+2019-12-01 00:29:11,023 WARN o.j.r.PluginManager: Found JAR conflict: /usr/local/Cellar/jmeter/5.1.1/libexec/lib/json-smart-2.3.jar and /usr/local/Cellar/jmeter/5.1.1/libexec/lib/json-smart-2.2.jar
+2019-12-01 00:29:11,064 INFO o.j.r.JARSourceHTTP: Found cached repo
+2019-12-01 00:29:11,221 WARN o.j.r.Plugin: Unable to load class: com.atlantbh.jmeter.plugins.oauth.OAuthSampler
+java.lang.NoClassDefFoundError: org/apache/jmeter/protocol/http/sampler/HTTPSampler2
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1009) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174) ~[?:?]
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:545) ~[?:?]
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:83) ~[?:?]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:453) ~[?:?]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:447) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:446) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:566) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:499) ~[?:?]
+	at org.jmeterplugins.repository.Plugin.getJARPath(Plugin.java:202) [jmeter-plugins-manager-1.3.jar:?]
+	at org.jmeterplugins.repository.Plugin.detectInstalledPlugin(Plugin.java:108) [jmeter-plugins-manager-1.3.jar:?]
+	at org.jmeterplugins.repository.Plugin.detectInstalled(Plugin.java:97) [jmeter-plugins-manager-1.3.jar:?]
+	at org.jmeterplugins.repository.PluginManager.load(PluginManager.java:86) [jmeter-plugins-manager-1.3.jar:?]
+	at org.jmeterplugins.repository.PluginManagerMenuItem$1.run(PluginManagerMenuItem.java:41) [jmeter-plugins-manager-1.3.jar:?]
+Caused by: java.lang.ClassNotFoundException: org.apache.jmeter.protocol.http.sampler.HTTPSampler2
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:466) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:566) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:499) ~[?:?]
+	... 16 more
+2019-12-01 00:29:11,234 INFO o.j.r.PluginManager: Plugins Status: [jpgc-graphs-basic=Standard, jpgc-graphs-additional=Extras, jpgc-autostop=Extras, jpgc-sense=Standard, jpgc-cmd=Standard, jpgc-graphs-composite=Standard, jpgc-csl=Standard, jpgc-functions=Standard, jpgc-casutg=Standard, jpgc-dbmon=Extras, jpgc-graphs-dist=Extras, jpgc-dummy=Standard, jpgc-filterresults=Standard, jpgc-ffw=Standard, jpgc-ggl=Extras, jpgc-httpraw=Extras, jpgc-sts=Extras, jpgc-hadoop=Hadoop, jpgc-fifo=Standard, jpgc-jms=ExtrasLibs, jpgc-jmxmon=Extras, jpgc-json=ExtrasLibs, jpgc-graphs-vs=Extras, jpgc-lockfile=Extras, jpgc-mergeresults=Standard, jpgc-pde=Extras, bzm-parallel=0.9, jpgc-prmctl=Extras, jpgc-perfmon=Standard, jpgc-plugins-manager=1.3, jpgc-redis=ExtrasLibs, jpgc-webdriver=WebDriver, jpgc-synthesis=Standard, jpgc-plancheck=Standard, jpgc-tst=Standard, jpgc-udp=Extras, jpgc-csvars=Extras, jpgc-wsc=Standard, jpgc-xml=Extras, jmeter-core=5.1.1, jmeter-ftp=5.1.1, jmeter-http=5.1.1, jmeter-jdbc=5.1.1, jmeter-jms=5.1.1, jmeter-junit=5.1.1, jmeter-java=5.1.1, jmeter-ldap=5.1.1, jmeter-mail=5.1.1, jmeter-mongodb=5.1.1, jmeter-native=5.1.1, jmeter-tcp=5.1.1, jmeter-components=5.1.1, jpgc-standard=2.0]
+2019-12-01 00:29:12,342 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-12-01 00:29:12,343 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-12-01 00:29:12,343 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-12-01 00:29:12,343 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-12-01 00:29:12,343 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2019-12-01 00:29:12,343 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2019-12-01 00:29:12,769 WARN o.a.j.g.u.MenuFactory: Could not instantiate class: kg.apc.jmeter.reporters.LoadosophiaUploaderGui
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:488) ~[?:?]
+	at org.apache.jmeter.gui.util.MenuFactory.getGUIComponent(MenuFactory.java:174) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.gui.util.MenuFactory.initializeMenus(MenuFactory.java:141) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.gui.util.MenuFactory.<clinit>(MenuFactory.java:106) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.control.gui.TestPlanGui.createPopupMenu(TestPlanGui.java:92) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.createPopupMenu(JMeterTreeNode.java:185) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.gui.action.EditCommand.doAction(EditCommand.java:46) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.gui.action.ActionRouter.performAction(ActionRouter.java:88) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.gui.action.ActionRouter.lambda$actionPerformed$0(ActionRouter.java:70) [ApacheJMeter_core.jar:5.1.1 r1855137]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313) [?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770) [?:?]
+	at java.awt.EventQueue.access$600(EventQueue.java:97) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:721) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:715) [?:?]
+	at java.security.AccessController.doPrivileged(Native Method) [?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) [?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:740) [?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/httpclient/methods/multipart/PartSource
+	at kg.apc.jmeter.reporters.LoadosophiaUploaderGui.init(LoadosophiaUploaderGui.java:114) ~[JMeterPlugins-Standard.jar:?]
+	at kg.apc.jmeter.reporters.LoadosophiaUploaderGui.<init>(LoadosophiaUploaderGui.java:28) ~[JMeterPlugins-Standard.jar:?]
+	... 26 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.httpclient.methods.multipart.PartSource
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:466) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:566) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:499) ~[?:?]
+	at kg.apc.jmeter.reporters.LoadosophiaUploaderGui.init(LoadosophiaUploaderGui.java:114) ~[JMeterPlugins-Standard.jar:?]
+	at kg.apc.jmeter.reporters.LoadosophiaUploaderGui.<init>(LoadosophiaUploaderGui.java:28) ~[JMeterPlugins-Standard.jar:?]
+	... 26 more
+2019-12-01 00:29:13,595 INFO o.a.j.e.KeyToolUtils: keytool found at 'keytool'
+2019-12-01 00:29:13,596 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file /usr/local/Cellar/jmeter/5.1.1/libexec/bin/proxyserver.jks
+2019-12-01 00:29:13,715 INFO o.a.j.s.FileServer: Default base='/Users/juliofalbo/workspace/microservices-with-spring-cloud'
+2019-12-01 00:29:13,984 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2019-12-01 00:29:13,984 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2019-12-01 00:29:13,984 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2019-12-01 00:29:13,984 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2019-12-01 00:29:14,006 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2019-12-01 00:29:20,729 INFO o.a.j.g.a.Load: Loading file: /Users/juliofalbo/workspace/microservices-with-spring-cloud/CreateBookingConcurrencyTest.jmx
+2019-12-01 00:29:20,729 INFO o.a.j.s.FileServer: Set new base='/Users/juliofalbo/workspace/microservices-with-spring-cloud'
+2019-12-01 00:29:20,863 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2019-12-01 00:29:20,869 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2019-12-01 00:29:20,871 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2019-12-01 00:29:20,872 INFO o.a.j.s.SaveService: Loading file: /Users/juliofalbo/workspace/microservices-with-spring-cloud/CreateBookingConcurrencyTest.jmx
+2019-12-01 00:29:21,034 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2019-12-01 00:29:21,078 INFO o.a.j.s.FileServer: Set new base='/Users/juliofalbo/workspace/microservices-with-spring-cloud'
+2019-12-01 00:29:35,250 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 00:29:35,251 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 00:29:35,251 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 00:29:35,253 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2019-12-01 00:29:35,254 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2019-12-01 00:29:35,476 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 00:29:35,542 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 00:29:35,542 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2019-12-01 00:29:35,543 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 00:29:35,543 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=0 delayedStart=false
+2019-12-01 00:29:35,547 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 00:29:35,547 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 00:29:35,548 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 00:29:35,554 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:29:35,564 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = c02y60kujgh8-c
+2019-12-01 00:29:35,570 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2019-12-01 00:29:35,622 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:29:35,622 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:29:35,623 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 00:29:35,623 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 00:29:35,624 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 00:29:35,624 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 00:30:09,980 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 00:30:09,980 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 00:30:09,983 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 00:30:10,032 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 00:30:10,032 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2019-12-01 00:30:10,032 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 00:30:10,032 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=0 delayedStart=false
+2019-12-01 00:30:10,033 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 00:30:10,033 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 00:30:10,034 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 00:30:10,035 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:30:10,046 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:30:10,046 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:30:10,047 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 00:30:10,047 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 00:30:10,047 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 00:30:10,047 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 00:30:12,257 ERROR o.a.j.JMeter: Uncaught exception: 
+java.lang.ClassCastException: java.desktop/javax.swing.text.AbstractDocument$DefaultDocumentEventUndoableWrapper cannot be cast to java.desktop/javax.swing.text.AbstractDocument$DefaultDocumentEvent
+	at jsyntaxpane.CompoundUndoMan.undoableEditHappened(CompoundUndoMan.java:61) ~[jsyntaxpane-1.0.0.jar:1.0.0]
+	at javax.swing.text.AbstractDocument.fireUndoableEditUpdate(AbstractDocument.java:293) ~[?:?]
+	at javax.swing.text.AbstractDocument.handleInsertString(AbstractDocument.java:761) ~[?:?]
+	at javax.swing.text.AbstractDocument.insertString(AbstractDocument.java:716) ~[?:?]
+	at javax.swing.text.PlainDocument.insertString(PlainDocument.java:131) ~[?:?]
+	at org.apache.jmeter.visualizers.SamplerResultTab.setTextOptimized(SamplerResultTab.java:692) ~[ApacheJMeter_components.jar:5.1.1 r1855137]
+	at org.apache.jmeter.visualizers.RenderAsText.showTextResponse(RenderAsText.java:36) ~[ApacheJMeter_components.jar:5.1.1 r1855137]
+	at org.apache.jmeter.visualizers.RenderAsText.renderResult(RenderAsText.java:31) ~[ApacheJMeter_components.jar:5.1.1 r1855137]
+	at org.apache.jmeter.visualizers.ViewResultsFullVisualizer.valueChanged(ViewResultsFullVisualizer.java:392) ~[ApacheJMeter_components.jar:5.1.1 r1855137]
+	at org.apache.jmeter.visualizers.ViewResultsFullVisualizer.valueChanged(ViewResultsFullVisualizer.java:365) ~[ApacheJMeter_components.jar:5.1.1 r1855137]
+	at javax.swing.JTree.fireValueChanged(JTree.java:2968) ~[?:?]
+	at javax.swing.JTree$TreeSelectionRedirector.valueChanged(JTree.java:3457) ~[?:?]
+	at javax.swing.tree.DefaultTreeSelectionModel.fireValueChanged(DefaultTreeSelectionModel.java:641) ~[?:?]
+	at javax.swing.tree.DefaultTreeSelectionModel.notifyPathChange(DefaultTreeSelectionModel.java:1111) ~[?:?]
+	at javax.swing.tree.DefaultTreeSelectionModel.setSelectionPaths(DefaultTreeSelectionModel.java:297) ~[?:?]
+	at javax.swing.tree.DefaultTreeSelectionModel.setSelectionPath(DefaultTreeSelectionModel.java:191) ~[?:?]
+	at javax.swing.JTree.setSelectionPath(JTree.java:1657) ~[?:?]
+	at javax.swing.plaf.basic.BasicTreeUI.selectPathForEvent(BasicTreeUI.java:2736) ~[?:?]
+	at javax.swing.plaf.basic.BasicTreeUI$Handler.handleSelection(BasicTreeUI.java:4015) ~[?:?]
+	at javax.swing.plaf.basic.BasicTreeUI$Handler.mousePressed(BasicTreeUI.java:3954) ~[?:?]
+	at java.awt.AWTEventMulticaster.mousePressed(AWTEventMulticaster.java:287) ~[?:?]
+	at java.awt.Component.processMouseEvent(Component.java:6586) ~[?:?]
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3342) ~[?:?]
+	at java.awt.Component.processEvent(Component.java:6354) ~[?:?]
+	at java.awt.Container.processEvent(Container.java:2261) ~[?:?]
+	at java.awt.Component.dispatchEventImpl(Component.java:4966) ~[?:?]
+	at java.awt.Container.dispatchEventImpl(Container.java:2319) ~[?:?]
+	at java.awt.Component.dispatchEvent(Component.java:4798) ~[?:?]
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4914) ~[?:?]
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4540) ~[?:?]
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4484) ~[?:?]
+	at java.awt.Container.dispatchEventImpl(Container.java:2305) ~[?:?]
+	at java.awt.Window.dispatchEventImpl(Window.java:2772) ~[?:?]
+	at java.awt.Component.dispatchEvent(Component.java:4798) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772) ~[?:?]
+	at java.awt.EventQueue.access$600(EventQueue.java:97) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:721) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:715) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:97) ~[?:?]
+	at java.awt.EventQueue$5.run(EventQueue.java:745) ~[?:?]
+	at java.awt.EventQueue$5.run(EventQueue.java:743) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2019-12-01 00:30:59,639 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 00:30:59,640 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 00:30:59,641 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 00:30:59,694 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 00:30:59,695 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2019-12-01 00:30:59,695 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 00:30:59,695 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=0 delayedStart=false
+2019-12-01 00:30:59,695 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 00:30:59,695 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 00:30:59,697 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 00:30:59,698 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:30:59,926 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:30:59,926 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:30:59,927 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 00:30:59,927 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 00:30:59,927 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 00:30:59,927 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 00:31:21,381 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 00:31:21,381 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 00:31:21,383 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 00:31:21,429 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 00:31:21,429 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2019-12-01 00:31:21,429 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 00:31:21,429 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=0 delayedStart=false
+2019-12-01 00:31:21,430 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 00:31:21,430 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 00:31:21,431 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 00:31:21,432 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:31:21,508 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:31:21,509 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:31:21,509 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 00:31:21,509 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 00:31:21,510 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 00:31:21,510 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 00:31:48,012 ERROR o.a.j.JMeter: Uncaught exception: 
+java.lang.ClassCastException: java.desktop/javax.swing.text.DefaultStyledDocument cannot be cast to jsyntaxpane.SyntaxDocument
+	at jsyntaxpane.SyntaxView.drawUnselectedText(SyntaxView.java:68) ~[jsyntaxpane-1.0.0.jar:1.0.0]
+	at javax.swing.text.PlainView.callDrawUnselectedText(PlainView.java:199) ~[?:?]
+	at javax.swing.text.PlainView.drawElement(PlainView.java:149) ~[?:?]
+	at javax.swing.text.PlainView.drawLineImpl(PlainView.java:101) ~[?:?]
+	at javax.swing.text.PlainView.drawLine(PlainView.java:126) ~[?:?]
+	at javax.swing.text.PlainView.paint(PlainView.java:441) ~[?:?]
+	at javax.swing.plaf.basic.BasicTextUI$RootView.paint(BasicTextUI.java:1527) ~[?:?]
+	at javax.swing.plaf.basic.BasicTextUI.paintSafely(BasicTextUI.java:753) ~[?:?]
+	at javax.swing.plaf.basic.BasicTextUI.paint(BasicTextUI.java:911) ~[?:?]
+	at javax.swing.plaf.basic.BasicTextUI.update(BasicTextUI.java:890) ~[?:?]
+	at javax.swing.JComponent.paintComponent(JComponent.java:797) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1074) ~[?:?]
+	at javax.swing.JComponent.paintChildren(JComponent.java:907) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1083) ~[?:?]
+	at javax.swing.JViewport.paint(JViewport.java:737) ~[?:?]
+	at javax.swing.JComponent.paintChildren(JComponent.java:907) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1083) ~[?:?]
+	at javax.swing.JComponent.paintChildren(JComponent.java:907) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1083) ~[?:?]
+	at javax.swing.JComponent.paintChildren(JComponent.java:907) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1083) ~[?:?]
+	at javax.swing.JViewport.paint(JViewport.java:737) ~[?:?]
+	at javax.swing.JComponent.paintChildren(JComponent.java:907) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1083) ~[?:?]
+	at javax.swing.JComponent.paintChildren(JComponent.java:907) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1083) ~[?:?]
+	at javax.swing.JComponent.paintChildren(JComponent.java:907) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1083) ~[?:?]
+	at javax.swing.JComponent.paintChildren(JComponent.java:907) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1083) ~[?:?]
+	at javax.swing.JComponent.paintToOffscreen(JComponent.java:5255) ~[?:?]
+	at javax.swing.RepaintManager$PaintManager.paintDoubleBufferedImpl(RepaintManager.java:1633) ~[?:?]
+	at javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(RepaintManager.java:1608) ~[?:?]
+	at javax.swing.RepaintManager$PaintManager.paint(RepaintManager.java:1546) ~[?:?]
+	at javax.swing.RepaintManager.paint(RepaintManager.java:1313) ~[?:?]
+	at javax.swing.JComponent._paintImmediately(JComponent.java:5203) ~[?:?]
+	at javax.swing.JComponent.paintImmediately(JComponent.java:5013) ~[?:?]
+	at javax.swing.RepaintManager$4.run(RepaintManager.java:857) ~[?:?]
+	at javax.swing.RepaintManager$4.run(RepaintManager.java:840) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at javax.swing.RepaintManager.paintDirtyRegions(RepaintManager.java:840) ~[?:?]
+	at javax.swing.RepaintManager.paintDirtyRegions(RepaintManager.java:815) ~[?:?]
+	at javax.swing.RepaintManager.prePaintDirtyRegions(RepaintManager.java:764) ~[?:?]
+	at javax.swing.RepaintManager.access$1200(RepaintManager.java:69) ~[?:?]
+	at javax.swing.RepaintManager$ProcessingRunnable.run(RepaintManager.java:1880) ~[?:?]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770) ~[?:?]
+	at java.awt.EventQueue.access$600(EventQueue.java:97) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:721) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:715) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:740) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2019-12-01 00:31:51,257 ERROR o.a.j.JMeter: Uncaught exception: 
+java.lang.ClassCastException: java.desktop/javax.swing.text.DefaultStyledDocument cannot be cast to jsyntaxpane.SyntaxDocument
+	at jsyntaxpane.SyntaxView.drawUnselectedText(SyntaxView.java:68) ~[jsyntaxpane-1.0.0.jar:1.0.0]
+	at javax.swing.text.PlainView.callDrawUnselectedText(PlainView.java:199) ~[?:?]
+	at javax.swing.text.PlainView.drawElement(PlainView.java:149) ~[?:?]
+	at javax.swing.text.PlainView.drawLineImpl(PlainView.java:101) ~[?:?]
+	at javax.swing.text.PlainView.drawLine(PlainView.java:126) ~[?:?]
+	at javax.swing.text.PlainView.paint(PlainView.java:441) ~[?:?]
+	at javax.swing.plaf.basic.BasicTextUI$RootView.paint(BasicTextUI.java:1527) ~[?:?]
+	at javax.swing.plaf.basic.BasicTextUI.paintSafely(BasicTextUI.java:753) ~[?:?]
+	at javax.swing.plaf.basic.BasicTextUI.paint(BasicTextUI.java:911) ~[?:?]
+	at javax.swing.plaf.basic.BasicTextUI.update(BasicTextUI.java:890) ~[?:?]
+	at javax.swing.JComponent.paintComponent(JComponent.java:797) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1074) ~[?:?]
+	at javax.swing.JComponent.paintChildren(JComponent.java:907) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1083) ~[?:?]
+	at javax.swing.JViewport.paint(JViewport.java:737) ~[?:?]
+	at javax.swing.JComponent.paintChildren(JComponent.java:907) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1083) ~[?:?]
+	at javax.swing.JComponent.paintChildren(JComponent.java:907) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1083) ~[?:?]
+	at javax.swing.JComponent.paintChildren(JComponent.java:907) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1083) ~[?:?]
+	at javax.swing.JViewport.paint(JViewport.java:737) ~[?:?]
+	at javax.swing.JComponent.paintChildren(JComponent.java:907) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1083) ~[?:?]
+	at javax.swing.JComponent.paintChildren(JComponent.java:907) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1083) ~[?:?]
+	at javax.swing.JComponent.paintToOffscreen(JComponent.java:5255) ~[?:?]
+	at javax.swing.RepaintManager$PaintManager.paintDoubleBufferedImpl(RepaintManager.java:1633) ~[?:?]
+	at javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(RepaintManager.java:1608) ~[?:?]
+	at javax.swing.RepaintManager$PaintManager.paint(RepaintManager.java:1546) ~[?:?]
+	at javax.swing.RepaintManager.paint(RepaintManager.java:1313) ~[?:?]
+	at javax.swing.JComponent._paintImmediately(JComponent.java:5203) ~[?:?]
+	at javax.swing.JComponent.paintImmediately(JComponent.java:5013) ~[?:?]
+	at javax.swing.RepaintManager$4.run(RepaintManager.java:857) ~[?:?]
+	at javax.swing.RepaintManager$4.run(RepaintManager.java:840) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at javax.swing.RepaintManager.paintDirtyRegions(RepaintManager.java:840) ~[?:?]
+	at javax.swing.RepaintManager.paintDirtyRegions(RepaintManager.java:815) ~[?:?]
+	at javax.swing.RepaintManager.prePaintDirtyRegions(RepaintManager.java:764) ~[?:?]
+	at javax.swing.RepaintManager.access$1200(RepaintManager.java:69) ~[?:?]
+	at javax.swing.RepaintManager$ProcessingRunnable.run(RepaintManager.java:1880) ~[?:?]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770) ~[?:?]
+	at java.awt.EventQueue.access$600(EventQueue.java:97) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:721) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:715) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:740) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2019-12-01 00:31:52,177 ERROR o.a.j.JMeter: Uncaught exception: 
+java.lang.ClassCastException: java.desktop/javax.swing.text.DefaultStyledDocument cannot be cast to jsyntaxpane.SyntaxDocument
+	at jsyntaxpane.SyntaxView.drawUnselectedText(SyntaxView.java:68) ~[jsyntaxpane-1.0.0.jar:1.0.0]
+	at javax.swing.text.PlainView.callDrawUnselectedText(PlainView.java:199) ~[?:?]
+	at javax.swing.text.PlainView.drawElement(PlainView.java:149) ~[?:?]
+	at javax.swing.text.PlainView.drawLineImpl(PlainView.java:101) ~[?:?]
+	at javax.swing.text.PlainView.drawLine(PlainView.java:126) ~[?:?]
+	at javax.swing.text.PlainView.paint(PlainView.java:441) ~[?:?]
+	at javax.swing.plaf.basic.BasicTextUI$RootView.paint(BasicTextUI.java:1527) ~[?:?]
+	at javax.swing.plaf.basic.BasicTextUI.paintSafely(BasicTextUI.java:753) ~[?:?]
+	at javax.swing.plaf.basic.BasicTextUI.paint(BasicTextUI.java:911) ~[?:?]
+	at javax.swing.plaf.basic.BasicTextUI.update(BasicTextUI.java:890) ~[?:?]
+	at javax.swing.JComponent.paintComponent(JComponent.java:797) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1074) ~[?:?]
+	at javax.swing.JComponent.paintChildren(JComponent.java:907) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1083) ~[?:?]
+	at javax.swing.JViewport.paint(JViewport.java:737) ~[?:?]
+	at javax.swing.JComponent.paintChildren(JComponent.java:907) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1083) ~[?:?]
+	at javax.swing.JComponent.paintChildren(JComponent.java:907) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1083) ~[?:?]
+	at javax.swing.JComponent.paintChildren(JComponent.java:907) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1083) ~[?:?]
+	at javax.swing.JViewport.paint(JViewport.java:737) ~[?:?]
+	at javax.swing.JComponent.paintChildren(JComponent.java:907) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1083) ~[?:?]
+	at javax.swing.JComponent.paintChildren(JComponent.java:907) ~[?:?]
+	at javax.swing.JComponent.paint(JComponent.java:1083) ~[?:?]
+	at javax.swing.JComponent.paintToOffscreen(JComponent.java:5255) ~[?:?]
+	at javax.swing.RepaintManager$PaintManager.paintDoubleBufferedImpl(RepaintManager.java:1633) ~[?:?]
+	at javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(RepaintManager.java:1608) ~[?:?]
+	at javax.swing.RepaintManager$PaintManager.paint(RepaintManager.java:1546) ~[?:?]
+	at javax.swing.RepaintManager.paint(RepaintManager.java:1313) ~[?:?]
+	at javax.swing.JComponent._paintImmediately(JComponent.java:5203) ~[?:?]
+	at javax.swing.JComponent.paintImmediately(JComponent.java:5013) ~[?:?]
+	at javax.swing.RepaintManager$4.run(RepaintManager.java:857) ~[?:?]
+	at javax.swing.RepaintManager$4.run(RepaintManager.java:840) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at javax.swing.RepaintManager.paintDirtyRegions(RepaintManager.java:840) ~[?:?]
+	at javax.swing.RepaintManager.paintDirtyRegions(RepaintManager.java:815) ~[?:?]
+	at javax.swing.RepaintManager.prePaintDirtyRegions(RepaintManager.java:764) ~[?:?]
+	at javax.swing.RepaintManager.access$1200(RepaintManager.java:69) ~[?:?]
+	at javax.swing.RepaintManager$ProcessingRunnable.run(RepaintManager.java:1880) ~[?:?]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770) ~[?:?]
+	at java.awt.EventQueue.access$600(EventQueue.java:97) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:721) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:715) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:740) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2019-12-01 00:34:46,014 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 00:34:46,015 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 00:34:46,015 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 00:34:46,060 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 00:34:46,061 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2019-12-01 00:34:46,061 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 00:34:46,061 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=0 delayedStart=false
+2019-12-01 00:34:46,061 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 00:34:46,062 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 00:34:46,062 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 00:34:46,062 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:34:46,377 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:34:46,377 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:34:46,377 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 00:34:46,377 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 00:34:46,377 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 00:34:46,378 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 00:35:18,270 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 00:35:18,271 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 00:35:18,271 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 00:35:18,319 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 00:35:18,319 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 00:35:18,320 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 00:35:18,320 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 00:35:18,321 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 00:35:18,320 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 00:35:18,321 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 00:35:18,321 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 00:35:18,321 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:35:18,321 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:35:18,415 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:35:18,415 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:35:18,415 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:35:18,415 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:35:18,416 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 00:35:18,416 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 00:35:18,416 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 00:35:18,416 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 00:35:18,416 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 00:35:18,417 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 00:39:05,813 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 00:39:05,814 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 00:39:05,815 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 00:39:05,861 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 00:39:05,862 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 00:39:05,862 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 00:39:05,862 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 00:39:05,862 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 00:39:05,863 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 00:39:05,863 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 00:39:05,863 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 00:39:05,863 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:39:05,864 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:39:06,098 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:39:06,098 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:39:06,099 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:39:06,099 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:39:06,099 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 00:39:06,099 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 00:39:06,099 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 00:39:06,099 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 00:39:06,100 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 00:39:06,100 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 00:39:32,760 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 00:39:32,761 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 00:39:32,762 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 00:39:32,806 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 00:39:32,806 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 00:39:32,806 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 00:39:32,806 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 00:39:32,807 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 00:39:32,807 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 00:39:32,807 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 00:39:32,807 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 00:39:32,808 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:39:32,808 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:39:32,917 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:39:32,917 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:39:32,917 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:39:32,917 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:39:32,918 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 00:39:32,918 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 00:39:32,918 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 00:39:32,918 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 00:39:32,918 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 00:39:32,919 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 00:41:14,389 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 00:41:14,389 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 00:41:14,389 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 00:41:14,436 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 00:41:14,436 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 00:41:14,436 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 00:41:14,436 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 00:41:14,437 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 00:41:14,437 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 00:41:14,437 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 00:41:14,437 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 00:41:14,438 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:41:14,438 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:41:14,818 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:41:14,818 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:41:14,818 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:41:14,818 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:41:14,819 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 00:41:14,819 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 00:41:14,819 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 00:41:14,819 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 00:41:14,819 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 00:41:14,820 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 00:42:25,821 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 00:42:25,821 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 00:42:25,822 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 00:42:25,869 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 00:42:25,870 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 00:42:25,870 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 00:42:25,870 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 00:42:25,870 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 00:42:25,871 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 00:42:25,871 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 00:42:25,871 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 00:42:25,871 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:42:25,871 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:42:26,204 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:42:26,204 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:42:26,204 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:42:26,204 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:42:26,204 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 00:42:26,204 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 00:42:26,204 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 00:42:26,204 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 00:42:26,205 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 00:42:26,205 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 00:44:05,454 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 00:44:05,455 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 00:44:05,455 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 00:44:05,501 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 00:44:05,501 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 00:44:05,502 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 00:44:05,502 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 00:44:05,502 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 00:44:05,502 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 00:44:05,503 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 00:44:05,503 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 00:44:05,503 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:44:05,503 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:44:05,850 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:44:05,850 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:44:05,850 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:44:05,850 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:44:05,851 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 00:44:05,851 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 00:44:05,851 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 00:44:05,851 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 00:44:05,851 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 00:44:05,851 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 00:50:01,503 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 00:50:01,504 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 00:50:01,504 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 00:50:01,552 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 00:50:01,552 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 00:50:01,552 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 00:50:01,552 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 00:50:01,553 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 00:50:01,553 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 00:50:01,553 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 00:50:01,553 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 00:50:01,554 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:50:01,554 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:50:01,883 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:50:01,883 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:50:01,883 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 00:50:01,884 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 00:50:01,893 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:50:01,893 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:50:01,893 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 00:50:01,893 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 00:50:01,893 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 00:50:01,894 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 00:52:15,532 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 00:52:15,533 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 00:52:15,533 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 00:52:15,588 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 00:52:15,588 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 00:52:15,588 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 00:52:15,588 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 00:52:15,589 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 00:52:15,589 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 00:52:15,589 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 00:52:15,589 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 00:52:15,590 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:52:15,590 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:52:15,943 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:52:15,943 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:52:15,944 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:52:15,944 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:52:15,944 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 00:52:15,944 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 00:52:15,944 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 00:52:15,944 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 00:52:15,945 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 00:52:15,945 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 00:53:04,876 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 00:53:04,876 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 00:53:04,877 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 00:53:04,925 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 00:53:04,925 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 00:53:04,925 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 00:53:04,925 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 00:53:04,926 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 00:53:04,926 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 00:53:04,926 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 00:53:04,926 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 00:53:04,927 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:53:04,927 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:53:05,323 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:53:05,324 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:53:05,324 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:53:05,324 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:53:05,324 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 00:53:05,324 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 00:53:05,324 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 00:53:05,324 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 00:53:05,324 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 00:53:05,325 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 00:53:41,629 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 00:53:41,629 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 00:53:41,630 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 00:53:41,677 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 00:53:41,678 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 00:53:41,678 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 00:53:41,678 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 00:53:41,678 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 00:53:41,679 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 00:53:41,678 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 00:53:41,680 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 00:53:41,680 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:53:41,680 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:53:42,016 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:53:42,016 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:53:42,017 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 00:53:42,017 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 00:53:42,026 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:53:42,026 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:53:42,026 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 00:53:42,026 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 00:53:42,026 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 00:53:42,026 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 00:54:06,636 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 00:54:06,636 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 00:54:06,636 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 00:54:06,690 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 00:54:06,690 INFO o.a.j.e.StandardJMeterEngine: Starting 5 threads for group Thread Group.
+2019-12-01 00:54:06,690 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 00:54:06,690 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=5 ramp-up=0 delayedStart=false
+2019-12-01 00:54:06,691 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 00:54:06,691 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 00:54:06,692 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-3
+2019-12-01 00:54:06,692 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:54:06,692 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-4
+2019-12-01 00:54:06,693 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 00:54:06,693 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:54:06,693 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 00:54:06,693 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-5
+2019-12-01 00:54:06,693 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:54:06,693 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:54:06,694 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:54:06,774 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:54:06,774 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:54:06,775 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 00:54:06,775 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 00:54:06,943 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:54:06,943 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:54:06,943 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:54:06,944 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:54:06,944 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-5
+2019-12-01 00:54:06,944 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 00:54:06,944 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-5
+2019-12-01 00:54:06,944 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 00:54:07,055 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:54:07,055 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:54:07,055 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-4
+2019-12-01 00:54:07,055 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-4
+2019-12-01 00:54:07,139 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:54:07,139 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:54:07,139 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-3
+2019-12-01 00:54:07,139 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-3
+2019-12-01 00:54:07,140 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 00:54:07,140 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 00:55:01,335 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 00:55:01,336 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 00:55:01,336 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 00:55:01,382 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 00:55:01,382 INFO o.a.j.e.StandardJMeterEngine: Starting 5 threads for group Thread Group.
+2019-12-01 00:55:01,382 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 00:55:01,382 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=5 ramp-up=0 delayedStart=false
+2019-12-01 00:55:01,383 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 00:55:01,383 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 00:55:01,384 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-3
+2019-12-01 00:55:01,384 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-4
+2019-12-01 00:55:01,384 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:55:01,384 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:55:01,384 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 00:55:01,384 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 00:55:01,384 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:55:01,384 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-5
+2019-12-01 00:55:01,385 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:55:01,385 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:55:01,763 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:55:01,763 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:55:01,763 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-3
+2019-12-01 00:55:01,763 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-3
+2019-12-01 00:55:01,775 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:55:01,775 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:55:01,775 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:55:01,775 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:55:01,775 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:55:01,775 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:55:01,775 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:55:01,775 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:55:01,775 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-4
+2019-12-01 00:55:01,775 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-4
+2019-12-01 00:55:01,775 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 00:55:01,775 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-5
+2019-12-01 00:55:01,775 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 00:55:01,775 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 00:55:01,775 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-5
+2019-12-01 00:55:01,775 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 00:55:01,776 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 00:55:01,777 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 00:55:58,648 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 00:55:58,648 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 00:55:58,649 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 00:55:58,694 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 00:55:58,694 INFO o.a.j.e.StandardJMeterEngine: Starting 5 threads for group Thread Group.
+2019-12-01 00:55:58,694 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 00:55:58,694 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=5 ramp-up=0 delayedStart=false
+2019-12-01 00:55:58,695 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 00:55:58,695 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 00:55:58,695 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-3
+2019-12-01 00:55:58,695 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:55:58,696 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:55:58,696 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-4
+2019-12-01 00:55:58,696 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 00:55:58,696 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 00:55:58,696 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-5
+2019-12-01 00:55:58,696 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:55:58,696 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:55:58,697 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 00:55:59,337 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:55:59,337 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:55:59,337 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-4
+2019-12-01 00:55:59,337 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-4
+2019-12-01 00:55:59,347 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:55:59,347 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:55:59,347 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:55:59,347 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:55:59,347 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:55:59,347 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:55:59,347 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-3
+2019-12-01 00:55:59,347 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 00:55:59,348 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 00:55:59,348 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-3
+2019-12-01 00:55:59,348 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 00:55:59,348 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 00:55:59,348 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 00:55:59,348 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 00:55:59,348 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-5
+2019-12-01 00:55:59,349 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-5
+2019-12-01 00:55:59,349 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 00:55:59,349 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:00:06,193 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:00:06,194 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:00:06,194 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:00:06,247 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:00:06,247 INFO o.a.j.e.StandardJMeterEngine: Starting 5 threads for group Thread Group.
+2019-12-01 01:00:06,247 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:00:06,247 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=5 ramp-up=0 delayedStart=false
+2019-12-01 01:00:06,248 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:00:06,248 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:00:06,249 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-3
+2019-12-01 01:00:06,249 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-4
+2019-12-01 01:00:06,250 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:00:06,250 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,250 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:00:06,250 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,249 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,250 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-5
+2019-12-01 01:00:06,250 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,251 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,251 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,251 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,251 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,252 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,254 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,343 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,343 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,349 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,349 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,349 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,349 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,353 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,353 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,354 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,354 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,793 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,793 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,793 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,793 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,793 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,793 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,794 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,794 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,793 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,794 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:00:06,794 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:00:06,794 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:00:06,794 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-4
+2019-12-01 01:00:06,794 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-3
+2019-12-01 01:00:06,794 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-4
+2019-12-01 01:00:06,794 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-3
+2019-12-01 01:00:06,794 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:00:06,794 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-5
+2019-12-01 01:00:06,795 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:00:06,795 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-5
+2019-12-01 01:00:06,796 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:00:06,796 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:08:08,510 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:08:08,510 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:08:08,511 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:08:08,568 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:08:08,568 INFO o.a.j.e.StandardJMeterEngine: Starting 5 threads for group Thread Group.
+2019-12-01 01:08:08,568 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:08:08,568 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=5 ramp-up=0 delayedStart=false
+2019-12-01 01:08:08,569 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:08:08,569 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:08:08,569 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-3
+2019-12-01 01:08:08,570 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,570 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:08:08,570 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,570 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:08:08,570 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-4
+2019-12-01 01:08:08,570 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-5
+2019-12-01 01:08:08,570 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,570 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,570 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,570 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,570 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,571 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,571 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,571 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,655 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,655 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,657 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,657 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,657 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,657 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,657 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,657 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,657 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,657 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,674 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,674 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,674 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,674 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,674 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,674 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,674 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,674 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:08:08,674 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,674 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,674 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:08:08,674 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:08:08,674 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:08:08,674 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-3
+2019-12-01 01:08:08,674 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-5
+2019-12-01 01:08:08,674 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:08:08,674 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-3
+2019-12-01 01:08:08,674 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-4
+2019-12-01 01:08:08,675 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-4
+2019-12-01 01:08:08,675 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-5
+2019-12-01 01:08:08,675 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:08:08,675 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:13:27,053 ERROR o.a.j.JMeter: Uncaught exception: 
+java.lang.ClassCastException: java.desktop/javax.swing.text.AbstractDocument$DefaultDocumentEventUndoableWrapper cannot be cast to java.desktop/javax.swing.text.AbstractDocument$DefaultDocumentEvent
+	at jsyntaxpane.CompoundUndoMan.undoableEditHappened(CompoundUndoMan.java:61) ~[jsyntaxpane-1.0.0.jar:1.0.0]
+	at javax.swing.text.AbstractDocument.fireUndoableEditUpdate(AbstractDocument.java:293) ~[?:?]
+	at javax.swing.text.AbstractDocument.handleInsertString(AbstractDocument.java:761) ~[?:?]
+	at javax.swing.text.AbstractDocument.insertString(AbstractDocument.java:716) ~[?:?]
+	at javax.swing.text.PlainDocument.insertString(PlainDocument.java:131) ~[?:?]
+	at org.apache.jmeter.visualizers.SamplerResultTab.setTextOptimized(SamplerResultTab.java:692) ~[ApacheJMeter_components.jar:5.1.1 r1855137]
+	at org.apache.jmeter.visualizers.RenderAsText.showTextResponse(RenderAsText.java:36) ~[ApacheJMeter_components.jar:5.1.1 r1855137]
+	at org.apache.jmeter.visualizers.RenderAsText.renderResult(RenderAsText.java:31) ~[ApacheJMeter_components.jar:5.1.1 r1855137]
+	at org.apache.jmeter.visualizers.ViewResultsFullVisualizer.valueChanged(ViewResultsFullVisualizer.java:392) ~[ApacheJMeter_components.jar:5.1.1 r1855137]
+	at org.apache.jmeter.visualizers.ViewResultsFullVisualizer.actionPerformed(ViewResultsFullVisualizer.java:524) ~[ApacheJMeter_components.jar:5.1.1 r1855137]
+	at javax.swing.JComboBox.fireActionEvent(JComboBox.java:1264) ~[?:?]
+	at javax.swing.JComboBox.setSelectedItem(JComboBox.java:589) ~[?:?]
+	at javax.swing.JComboBox.setSelectedIndex(JComboBox.java:624) ~[?:?]
+	at javax.swing.plaf.basic.BasicComboPopup$Handler.mouseReleased(BasicComboPopup.java:907) ~[?:?]
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:298) ~[?:?]
+	at java.awt.Component.processMouseEvent(Component.java:6589) ~[?:?]
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3342) ~[?:?]
+	at javax.swing.plaf.basic.BasicComboPopup$1.processMouseEvent(BasicComboPopup.java:551) ~[?:?]
+	at java.awt.Component.processEvent(Component.java:6354) ~[?:?]
+	at java.awt.Container.processEvent(Container.java:2261) ~[?:?]
+	at java.awt.Component.dispatchEventImpl(Component.java:4966) ~[?:?]
+	at java.awt.Container.dispatchEventImpl(Container.java:2319) ~[?:?]
+	at java.awt.Component.dispatchEvent(Component.java:4798) ~[?:?]
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4914) ~[?:?]
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4543) ~[?:?]
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4484) ~[?:?]
+	at java.awt.Container.dispatchEventImpl(Container.java:2305) ~[?:?]
+	at java.awt.Window.dispatchEventImpl(Window.java:2772) ~[?:?]
+	at java.awt.Component.dispatchEvent(Component.java:4798) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772) ~[?:?]
+	at java.awt.EventQueue.access$600(EventQueue.java:97) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:721) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:715) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:97) ~[?:?]
+	at java.awt.EventQueue$5.run(EventQueue.java:745) ~[?:?]
+	at java.awt.EventQueue$5.run(EventQueue.java:743) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2019-12-01 01:13:35,500 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:13:35,500 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:13:35,500 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:13:35,554 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:13:35,554 INFO o.a.j.e.StandardJMeterEngine: Starting 5 threads for group Thread Group.
+2019-12-01 01:13:35,554 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:13:35,554 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=5 ramp-up=0 delayedStart=false
+2019-12-01 01:13:35,555 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:13:35,555 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:13:35,556 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:13:35,556 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-3
+2019-12-01 01:13:35,556 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:13:35,556 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-4
+2019-12-01 01:13:35,556 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:13:35,556 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:13:35,556 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:13:35,556 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-5
+2019-12-01 01:13:35,557 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:13:35,557 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:13:35,557 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:13:35,557 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:13:35,557 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:13:35,557 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:13:35,557 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:13:35,995 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:13:35,995 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:13:36,002 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:13:36,002 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:13:36,002 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:13:36,002 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:13:36,002 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:13:36,002 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:13:36,004 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:13:36,004 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:13:36,023 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:13:36,023 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:13:36,023 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:13:36,023 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:13:36,023 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:13:36,023 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:13:36,023 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:13:36,023 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:13:36,023 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:13:36,023 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:13:36,023 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:13:36,023 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-4
+2019-12-01 01:13:36,023 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:13:36,023 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-4
+2019-12-01 01:13:36,023 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-5
+2019-12-01 01:13:36,023 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:13:36,023 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:13:36,023 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-3
+2019-12-01 01:13:36,024 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-3
+2019-12-01 01:13:36,024 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-5
+2019-12-01 01:13:36,025 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:13:36,025 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:14:04,407 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:14:04,407 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:14:04,407 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:14:04,461 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:14:04,461 INFO o.a.j.e.StandardJMeterEngine: Starting 5 threads for group Thread Group.
+2019-12-01 01:14:04,461 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:14:04,461 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=5 ramp-up=0 delayedStart=false
+2019-12-01 01:14:04,462 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:14:04,462 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:14:04,462 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-3
+2019-12-01 01:14:04,463 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-4
+2019-12-01 01:14:04,463 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:14:04,463 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,463 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:14:04,463 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-5
+2019-12-01 01:14:04,463 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,463 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,463 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,463 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,464 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,464 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,464 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,464 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,465 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,524 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,524 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,524 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,525 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,525 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,525 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,528 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,528 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,528 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,528 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,546 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,546 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,546 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-3
+2019-12-01 01:14:04,546 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-3
+2019-12-01 01:14:04,548 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,548 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,548 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,548 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,548 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-4
+2019-12-01 01:14:04,548 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-5
+2019-12-01 01:14:04,548 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-5
+2019-12-01 01:14:04,548 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-4
+2019-12-01 01:14:04,551 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,551 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,551 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,551 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:14:04,551 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:14:04,551 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:14:04,551 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:14:04,551 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:14:04,551 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:14:04,551 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:14:12,090 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:14:12,090 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:14:12,090 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:14:12,141 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:14:12,141 INFO o.a.j.e.StandardJMeterEngine: Starting 5 threads for group Thread Group.
+2019-12-01 01:14:12,141 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:14:12,141 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=5 ramp-up=0 delayedStart=false
+2019-12-01 01:14:12,141 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:14:12,142 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:14:12,142 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-3
+2019-12-01 01:14:12,142 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,142 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-4
+2019-12-01 01:14:12,142 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,143 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:14:12,143 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,143 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:14:12,143 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,143 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-5
+2019-12-01 01:14:12,143 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,143 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,144 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,144 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,145 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,145 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,183 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,183 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,183 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,183 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,185 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,185 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,185 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,185 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,188 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,188 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,193 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,193 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,193 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,193 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,193 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,194 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,194 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,194 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,193 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,194 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:14:12,194 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:14:12,194 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:14:12,194 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:14:12,194 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:14:12,194 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-4
+2019-12-01 01:14:12,194 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-3
+2019-12-01 01:14:12,194 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-3
+2019-12-01 01:14:12,194 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-5
+2019-12-01 01:14:12,194 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-4
+2019-12-01 01:14:12,195 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-5
+2019-12-01 01:14:12,196 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:14:12,196 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:19:56,187 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:19:56,187 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:19:56,188 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:19:56,241 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:19:56,241 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 01:19:56,241 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:19:56,242 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 01:19:56,242 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:19:56,242 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:19:56,242 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:19:56,242 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:19:56,243 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:19:56,243 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:19:56,243 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:19:56,243 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:19:56,777 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:19:56,777 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:19:56,787 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:19:56,787 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:19:56,804 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:19:56,804 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:19:56,804 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:19:56,804 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:19:56,804 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:19:56,804 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:19:56,804 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:19:56,804 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:19:56,804 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:19:56,804 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:20:02,838 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:20:02,838 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:20:02,838 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:20:02,887 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:20:02,887 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 01:20:02,887 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:20:02,887 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 01:20:02,888 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:20:02,888 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:20:02,888 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:20:02,888 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:20:02,888 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:20:02,889 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:20:02,889 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:20:02,889 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:20:02,928 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:20:02,928 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:20:02,928 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:20:02,928 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:20:02,955 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:20:02,955 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:20:02,955 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:20:02,956 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:20:02,958 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:20:02,958 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:20:02,958 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:20:02,958 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:20:02,958 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:20:02,958 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:20:14,507 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:20:14,507 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:20:14,507 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:20:14,558 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:20:14,558 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 01:20:14,558 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:20:14,558 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 01:20:14,559 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:20:14,559 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:20:14,559 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:20:14,559 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:20:14,560 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:20:14,560 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:20:14,560 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:20:14,560 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:20:14,590 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:20:14,590 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:20:14,590 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:20:14,590 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:20:14,598 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:20:14,598 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:20:14,598 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:20:14,598 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:20:14,598 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:20:14,598 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:20:14,598 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:20:14,598 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:20:14,598 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:20:14,599 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:33:26,682 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:33:26,683 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:33:26,683 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:33:26,735 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:33:26,735 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 01:33:26,735 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:33:26,735 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 01:33:26,736 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:33:26,736 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:33:26,736 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:33:26,736 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:33:26,737 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:33:26,737 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:33:26,737 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:33:26,737 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:33:27,159 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:33:27,159 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:33:27,159 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:33:27,159 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:33:27,286 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:33:27,286 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:33:27,286 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:33:27,286 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:33:27,286 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:33:27,286 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:33:27,287 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:33:27,287 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:33:27,287 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:33:27,287 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:34:32,815 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:34:32,816 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:34:32,816 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:34:32,878 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:34:32,878 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 01:34:32,878 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:34:32,878 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 01:34:32,879 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:34:32,879 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:34:32,879 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:34:32,879 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:34:32,880 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:34:32,880 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:34:32,880 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:34:32,881 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:34:32,884 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:34:32,884 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:34:32,884 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:34:32,884 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:34:32,884 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:34:32,885 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:34:32,885 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:34:32,885 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:34:32,885 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:34:32,885 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:34:32,885 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:34:32,885 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:34:32,886 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:34:32,886 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:34:43,340 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:34:43,340 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:34:43,341 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:34:43,396 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:34:43,396 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 01:34:43,396 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:34:43,396 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 01:34:43,397 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:34:43,397 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:34:43,397 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:34:43,397 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:34:43,398 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:34:43,398 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:34:43,398 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:34:43,398 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:34:43,828 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:34:43,828 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:34:43,841 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:34:43,841 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:34:43,865 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:34:43,865 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:34:43,865 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:34:43,865 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:34:43,865 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:34:43,865 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:34:43,865 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:34:43,865 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:34:43,866 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:34:43,866 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:34:47,694 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:34:47,694 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:34:47,695 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:34:47,742 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:34:47,742 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 01:34:47,742 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:34:47,742 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 01:34:47,743 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:34:47,743 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:34:47,743 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:34:47,743 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:34:47,743 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:34:47,744 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:34:47,744 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:34:47,744 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:34:47,788 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:34:47,788 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:34:47,789 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:34:47,788 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:34:47,810 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:34:47,810 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:34:47,811 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:34:47,811 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:34:47,816 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:34:47,816 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:34:47,816 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:34:47,816 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:34:47,816 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:34:47,816 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:37:57,166 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:37:57,167 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:37:57,167 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:37:57,224 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:37:57,224 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 01:37:57,224 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:37:57,224 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 01:37:57,225 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:37:57,225 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:37:57,225 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:37:57,225 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:37:57,225 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:37:57,225 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:37:57,226 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:37:57,226 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:37:57,226 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:37:57,226 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:37:57,509 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:37:57,509 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:37:57,509 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:37:57,509 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:37:57,578 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:37:57,578 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:37:57,625 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:37:57,625 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:37:57,798 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:37:57,798 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:37:57,798 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:37:57,798 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:37:57,803 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:37:57,803 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:37:57,804 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:37:57,804 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:37:57,804 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:37:57,804 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:38:15,281 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:38:15,282 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:38:15,282 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:38:15,335 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:38:15,336 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 01:38:15,336 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:38:15,336 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 01:38:15,336 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:38:15,336 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:38:15,336 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:38:15,337 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:38:15,337 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:15,337 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:15,338 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:15,338 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:15,338 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:15,338 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:15,362 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:15,362 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:15,364 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:15,364 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:15,383 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:15,383 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:15,400 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:15,400 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:15,410 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:15,410 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:15,410 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:15,410 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:15,410 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:38:15,410 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:38:15,410 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:38:15,410 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:38:15,411 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:38:15,411 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:38:42,470 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:38:42,471 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:38:42,471 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:38:42,525 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:38:42,526 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 01:38:42,526 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:38:42,526 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 01:38:42,526 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:38:42,526 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:38:42,526 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:38:42,527 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:38:42,527 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:42,527 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:42,527 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:42,528 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:42,528 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:42,528 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:42,551 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:42,551 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:42,551 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:42,551 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:42,600 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:42,600 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:42,603 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:42,603 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:42,603 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:42,603 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:42,603 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:38:42,603 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:38:42,609 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:42,609 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:42,609 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:38:42,609 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:38:42,609 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:38:42,609 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:38:48,069 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:38:48,069 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:38:48,069 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:38:48,121 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:38:48,121 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 01:38:48,121 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:38:48,121 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 01:38:48,122 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:38:48,122 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:38:48,122 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:38:48,122 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:38:48,122 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:48,123 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:48,123 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:48,123 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:48,123 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:48,123 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:48,141 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:48,141 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:48,141 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:48,142 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:48,157 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:48,157 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:48,158 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:48,158 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:48,189 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:48,189 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:48,189 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:38:48,190 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:38:48,193 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:48,193 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:48,193 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:38:48,193 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:38:48,193 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:38:48,194 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:38:52,180 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:38:52,180 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:38:52,180 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:38:52,232 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:38:52,232 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 01:38:52,232 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:38:52,232 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 01:38:52,233 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:38:52,233 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:38:52,233 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:38:52,233 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:38:52,234 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:52,234 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:52,234 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:52,234 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:52,234 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:52,234 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:38:52,252 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:52,252 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:52,255 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:52,255 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:52,268 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:52,268 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:52,268 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:52,268 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:52,269 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:52,269 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:52,269 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:38:52,269 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:38:52,269 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:38:52,269 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:38:52,270 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:38:52,270 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:38:52,270 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:38:52,270 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:39:56,992 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:39:56,992 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:39:56,992 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:39:57,048 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:39:57,048 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 01:39:57,048 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:39:57,048 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 01:39:57,049 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:39:57,049 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:39:57,049 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:39:57,049 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:39:57,049 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:39:57,050 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:39:57,050 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:39:57,050 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:39:57,050 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:39:57,050 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:39:57,066 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:39:57,066 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:39:57,067 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:39:57,067 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:39:57,123 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:39:57,123 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:39:57,126 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:39:57,126 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:39:57,131 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:39:57,131 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:39:57,131 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:39:57,131 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:39:57,131 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:39:57,131 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:39:57,131 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:39:57,131 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:39:57,131 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:39:57,132 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:40:27,323 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:40:27,323 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:40:27,324 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:40:27,376 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:40:27,376 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 01:40:27,376 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:40:27,376 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 01:40:27,376 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:40:27,377 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:40:27,376 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:40:27,377 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:40:27,377 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:40:27,377 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:40:27,377 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:40:27,377 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:40:27,378 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:40:27,378 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:40:27,393 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:40:27,393 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:40:27,394 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:40:27,394 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:40:27,406 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:40:27,406 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:40:27,406 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:40:27,406 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:40:27,433 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:40:27,433 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:40:27,434 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:40:27,434 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:40:27,438 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:40:27,438 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:40:27,438 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:40:27,438 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:40:27,438 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:40:27,438 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:43:37,277 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:43:37,278 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:43:37,278 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:43:37,337 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:43:37,337 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 01:43:37,337 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:43:37,337 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 01:43:37,338 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:43:37,338 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:43:37,338 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:43:37,338 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:43:37,338 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:43:37,338 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:43:37,338 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:43:37,339 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:43:37,339 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:43:37,339 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:43:37,807 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:43:37,807 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:43:37,807 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:43:37,807 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:43:37,857 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:43:37,857 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:43:37,857 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:43:37,857 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:43:37,872 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:43:37,872 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:43:37,873 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:43:37,873 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:43:37,873 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:43:37,873 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:43:37,873 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:43:37,873 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:43:37,873 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:43:37,873 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:45:00,057 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:45:00,057 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:45:00,057 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:45:00,108 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:45:00,108 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 01:45:00,109 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:45:00,109 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 01:45:00,109 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:45:00,109 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:45:00,109 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:45:00,109 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:45:00,110 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:45:00,110 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:45:00,110 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:45:00,110 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:45:00,110 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:45:00,110 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:45:00,382 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:45:00,382 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:45:00,382 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:45:00,382 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:45:00,452 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:45:00,452 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:45:00,454 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:45:00,454 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:45:00,531 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:45:00,531 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:45:00,531 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:45:00,531 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:45:00,531 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:45:00,531 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:45:00,531 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:45:00,531 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:45:00,531 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:45:00,532 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:46:15,035 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:46:15,036 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:46:15,036 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:46:15,090 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:46:15,090 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 01:46:15,090 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:46:15,090 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 01:46:15,090 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:46:15,090 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:46:15,090 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:46:15,090 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:46:15,091 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:46:15,091 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:46:15,091 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:46:15,091 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:46:15,091 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:46:15,091 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:46:15,366 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:46:15,366 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:46:15,366 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:46:15,366 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:46:15,527 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:46:15,527 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:46:15,541 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:46:15,541 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:46:15,541 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:46:15,541 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:46:15,541 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:46:15,541 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:46:15,541 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:46:15,541 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:46:15,541 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:46:15,541 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:46:15,542 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:46:15,542 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 01:46:21,285 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 01:46:21,285 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 01:46:21,285 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 01:46:21,338 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 01:46:21,338 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 01:46:21,338 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 01:46:21,338 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 01:46:21,339 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 01:46:21,339 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 01:46:21,339 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 01:46:21,339 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 01:46:21,340 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:46:21,340 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:46:21,340 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:46:21,340 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:46:21,340 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:46:21,340 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 01:46:21,363 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:46:21,363 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:46:21,364 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:46:21,364 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:46:21,388 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:46:21,388 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:46:21,389 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:46:21,389 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:46:21,413 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:46:21,413 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:46:21,413 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 01:46:21,413 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 01:46:21,419 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 01:46:21,419 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 01:46:21,420 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 01:46:21,420 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 01:46:21,420 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 01:46:21,420 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 02:02:36,477 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 02:02:36,478 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 02:02:36,478 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 02:02:36,532 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 02:02:36,532 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 02:02:36,533 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 02:02:36,533 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 02:02:36,533 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 02:02:36,533 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 02:02:36,533 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 02:02:36,533 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 02:02:36,534 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:02:36,534 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:02:36,534 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:02:36,534 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:02:36,534 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:02:36,534 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:02:36,799 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:02:36,799 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:02:36,800 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:02:36,800 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:02:36,880 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:02:36,881 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:02:36,927 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:02:36,927 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:02:37,197 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:02:37,197 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:02:37,197 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:02:37,197 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:02:37,198 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 02:02:37,198 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 02:02:37,198 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 02:02:37,198 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 02:02:37,198 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 02:02:37,198 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 02:06:36,441 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 02:06:36,441 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 02:06:36,442 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 02:06:36,495 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 02:06:36,495 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 02:06:36,495 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 02:06:36,495 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 02:06:36,496 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 02:06:36,496 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 02:06:36,496 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 02:06:36,496 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 02:06:36,497 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:06:36,497 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:06:36,497 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:06:36,497 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:06:36,497 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:06:36,497 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:06:36,914 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:06:36,914 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:06:36,914 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:06:36,914 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:06:37,313 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:06:37,313 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:06:37,313 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:06:37,313 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:06:37,378 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:06:37,378 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:06:37,379 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 02:06:37,379 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 02:06:37,382 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:06:37,382 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:06:37,382 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 02:06:37,382 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 02:06:37,382 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 02:06:37,382 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 02:06:44,866 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 02:06:44,866 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 02:06:44,866 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 02:06:44,918 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 02:06:44,918 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 02:06:44,918 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 02:06:44,918 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 02:06:44,919 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 02:06:44,919 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 02:06:44,919 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 02:06:44,919 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 02:06:44,920 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:06:44,920 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:06:44,920 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:06:44,920 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:06:44,920 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:06:44,921 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:06:44,954 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:06:44,954 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:06:44,956 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:06:44,956 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:06:44,968 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:06:44,969 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:06:44,969 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:06:44,969 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:06:44,971 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:06:44,971 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:06:44,972 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:06:44,972 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:06:44,972 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 02:06:44,972 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 02:06:44,972 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 02:06:44,972 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 02:06:44,972 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 02:06:44,972 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 02:07:09,332 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 02:07:09,332 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 02:07:09,333 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 02:07:09,389 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 02:07:09,389 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 02:07:09,389 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 02:07:09,389 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 02:07:09,390 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 02:07:09,390 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 02:07:09,390 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 02:07:09,390 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 02:07:09,391 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:07:09,391 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:07:09,391 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:07:09,391 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:07:09,391 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:07:09,391 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:07:09,409 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:07:09,409 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:07:09,411 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:07:09,411 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:07:09,459 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:07:09,459 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:07:09,464 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:07:09,464 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:07:09,467 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:07:09,467 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:07:09,467 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:07:09,467 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:07:09,467 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 02:07:09,467 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 02:07:09,468 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 02:07:09,468 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 02:07:09,468 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 02:07:09,468 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 02:14:55,642 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 02:14:55,642 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 02:14:55,642 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 02:14:55,693 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 02:14:55,693 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 02:14:55,693 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 02:14:55,693 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 02:14:55,694 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 02:14:55,694 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 02:14:55,694 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 02:14:55,694 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 02:14:55,695 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:14:55,695 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:14:55,695 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:14:55,695 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:14:55,695 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:14:55,695 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:14:55,977 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:14:55,977 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:14:55,977 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:14:55,977 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:14:56,054 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:14:56,054 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:14:56,080 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:14:56,080 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:14:56,207 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:14:56,207 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:14:56,207 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:14:56,207 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:14:56,207 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 02:14:56,208 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 02:14:56,208 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 02:14:56,208 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 02:14:56,208 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 02:14:56,208 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2019-12-01 02:15:35,262 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-12-01 02:15:35,262 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-12-01 02:15:35,263 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2019-12-01 02:15:35,317 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-12-01 02:15:35,317 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Thread Group.
+2019-12-01 02:15:35,317 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-12-01 02:15:35,317 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=0 delayedStart=false
+2019-12-01 02:15:35,318 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-12-01 02:15:35,318 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-12-01 02:15:35,318 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-12-01 02:15:35,318 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2019-12-01 02:15:35,318 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:15:35,318 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:15:35,319 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:15:35,319 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:15:35,319 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:15:35,319 INFO o.a.j.t.JMeterThread: Thread started: parallel bzm - Parallel Controller
+2019-12-01 02:15:35,346 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:15:35,346 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:15:35,349 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:15:35,350 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:15:35,398 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:15:35,398 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:15:35,403 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:15:35,403 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:15:35,403 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:15:35,403 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:15:35,403 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2019-12-01 02:15:35,403 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2019-12-01 02:15:35,404 INFO o.a.j.t.JMeterThread: Thread is done: parallel bzm - Parallel Controller
+2019-12-01 02:15:35,404 INFO o.a.j.t.JMeterThread: Thread finished: parallel bzm - Parallel Controller
+2019-12-01 02:15:35,404 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2019-12-01 02:15:35,404 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2019-12-01 02:15:35,405 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-12-01 02:15:35,405 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
