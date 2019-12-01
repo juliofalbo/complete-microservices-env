@@ -27,7 +27,8 @@ public class Room {
 
     @OneToMany(
             cascade = CascadeType.ALL,
-            orphanRemoval = true
+            orphanRemoval = true,
+            mappedBy = "room"
     )
     private List<Booking> bookings;
 

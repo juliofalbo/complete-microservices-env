@@ -18,7 +18,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">2</stringProp>
+        <stringProp name="ThreadGroup.num_threads">5</stringProp>
         <stringProp name="ThreadGroup.ramp_time">0</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -82,10 +82,13 @@
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-  &quot;endDate&quot;: &quot;2024-03-20&quot;,&#xd;
+  &quot;endDate&quot;: &quot;2025-02-20&quot;,&#xd;
   &quot;guestEmail&quot;: &quot;julio@falbo.com&quot;,&#xd;
-  &quot;idRoom&quot;: &quot;9587ce50-ba33-47ef-a275-b5b3f2103956&quot;,&#xd;
-  &quot;startDate&quot;: &quot;2024-03-01&quot;&#xd;
+  &quot;idRoom&quot;: &quot;8d744891-3fcb-4673-8344-26df19d9059a&quot;,&#xd;
+  &quot;startDate&quot;: &quot;2025-02-01&quot;,&#xd;
+  &quot;ccvEncrypted&quot;: &quot;asfasfasgfasgasgasgasgsaga&quot;,&#xd;
+  &quot;creditCardNumberEncrypted&quot;: &quot;adfgadgasgasgasgasgsagas&quot;,&#xd;
+  &quot;expireDateEncrypted&quot;: &quot;gadgasgasgsagasgasgas&quot;&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -113,10 +116,13 @@
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-  &quot;endDate&quot;: &quot;2024-04-20&quot;,&#xd;
+  &quot;endDate&quot;: &quot;2025-07-20&quot;,&#xd;
   &quot;guestEmail&quot;: &quot;julio@falbo.com&quot;,&#xd;
-  &quot;idRoom&quot;: &quot;9587ce50-ba33-47ef-a275-b5b3f2103956&quot;,&#xd;
-  &quot;startDate&quot;: &quot;2024-04-01&quot;&#xd;
+  &quot;idRoom&quot;: &quot;8d744891-3fcb-4673-8344-26df19d9059a&quot;,&#xd;
+  &quot;startDate&quot;: &quot;2025-07-01&quot;,&#xd;
+  &quot;ccvEncrypted&quot;: &quot;asfasfasgfasgasgasgasgsaga&quot;,&#xd;
+  &quot;creditCardNumberEncrypted&quot;: &quot;adfgadgasgasgasgasgsagas&quot;,&#xd;
+  &quot;expireDateEncrypted&quot;: &quot;gadgasgasgsagasgasgas&quot;&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>

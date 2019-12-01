@@ -23,3 +23,12 @@ CREATE TABLE booking_dates (
       version INTEGER,
       UNIQUE (id_booking, date)
 );
+
+CREATE TABLE booking_states (
+    id UUID PRIMARY KEY,
+    id_booking UUID NOT NULL REFERENCES bookings(id),
+    state TEXT NOT NULL,
+    creation_date TIMESTAMP NOT NULL,
+    last_update TIMESTAMP,
+    version INTEGER
+);

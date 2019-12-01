@@ -14,8 +14,14 @@ import com.julio.poc.microservices.booking.entities.Booking;
 
 @Mapper(componentModel = "spring")
 public interface BookingMapper {
+    @Mappings({
+            @Mapping(target = "room.id", source = "idRoom")
+    })
     Booking toEntity(BookingPostDTO dto);
 
+    @Mappings({
+            @Mapping(target = "idRoom", source = "room.id")
+    })
     BookingGetDTO toDTO(Booking entity);
 
     List<BookingGetDTO> toDTO(List<Booking> entities);

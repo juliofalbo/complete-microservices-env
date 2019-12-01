@@ -43,3 +43,17 @@ services:
       - "rabbitmq-prometheus"
     volumes:
       - log_volume:/logs
+  financial:
+    container_name: financial
+    build:
+      context: ./financial
+      dockerfile: Dockerfile
+    ports:
+      - "8300:8300"
+    environment:
+      - "SPRING_PROFILES_ACTIVE=prod"
+      - "LOGGING_FILE=/logs/financial-application.log"
+    networks:
+      - "rabbitmq-prometheus"
+    volumes:
+      - log_volume:/logs

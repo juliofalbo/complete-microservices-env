@@ -20,7 +20,7 @@ public class SwaggerConfig {
 			"Julio Falbo", "http://www.medium.com/@julio.falbo", "julio.falbo.rj@gmail.com");
 	
 	public static final ApiInfo DEFAULT_API_INFO = new ApiInfo(
-			"Hotel Management System API", "Microservices Concepts", "1.0",
+			"Hotel Management System API - Searching Service", "Microservices Concepts", "1.0",
 			"urn:tos", DEFAULT_CONTACT,
 			"Apache 2.0", "http://www.apache.org/licenses/LICENSE-2.0", Collections.emptyList());
 

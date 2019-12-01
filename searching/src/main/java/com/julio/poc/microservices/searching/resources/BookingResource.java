@@ -1,6 +1,5 @@
 package com.julio.poc.microservices.searching.resources;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -34,28 +33,24 @@ public class BookingResource {
     }
 
     @GetMapping
-    public Page<BookingGetDTO> findAll(@PageableDefault Pageable page,
+    public Page<BookingGetDTO> findAll(@RequestParam(value = "page", required = false, defaultValue = "0") int page,
+                                       @RequestParam(value = "size", required = false, defaultValue = "10") int size,
                                        @RequestParam(value = "idRoom", required = false) UUID idRoom,
                                        @RequestParam(value = "guestEmail", required = false) String guestEmail,
-                                       @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
-                                       @RequestParam(value = "startDate", required = false) LocalDate startDate,
-                                       @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
-                                       @RequestParam(value = "endDate", required = false) LocalDate endDate,
-                                       @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
+                                       @RequestParam(value = "state", required = false) String state,
                                        @RequestParam(value = "creationDate", required = false) LocalDateTime creationDate,
                                        @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
                                        @RequestParam(value = "lastUpdate", required = false) LocalDateTime lastUpdate
                               ){
         Specification<Booking> objectSpecification = SpecificationBuilder.init()
-                .withEqualInSubclassFilter(new FieldIn("bookingIdentity", "idRoom"), idRoom)
-                .withEqualInSubclassFilter(new FieldIn("bookingIdentity", "startDate"), startDate)
-                .withEqualInSubclassFilter(new FieldIn("bookingIdentity", "endDate"), endDate)
+                .withEqualInSubclassFilter(new FieldIn("room", "id"), idRoom)
+                .withEqualInListFieldFilter(new FieldIn("states", "state"), state)
                 .withEqualFilter("guestEmail", guestEmail)
                 .withEqualFilter("creationDate", creationDate)
                 .withEqualFilter("lastUpdate", lastUpdate)
                 .buildSpec();
 
-        return service.search(page, objectSpecification);
+        return service.search(PageRequest.of(page, size), objectSpecification);
     }
 
 }

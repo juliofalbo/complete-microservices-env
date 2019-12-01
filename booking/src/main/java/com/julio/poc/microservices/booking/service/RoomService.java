@@ -13,19 +13,16 @@ import com.julio.poc.microservices.booking.entities.Room;
 import com.julio.poc.microservices.booking.mappers.RoomMapper;
 import com.julio.poc.microservices.booking.repositories.RoomRepository;
 import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 @Service
 @Slf4j
+@RequiredArgsConstructor
 public class RoomService {
 
     private final RoomRepository repository;
     private final RoomMapper mapper;
-
-    public RoomService(RoomRepository repository, RoomMapper mapper) {
-        this.repository = repository;
-        this.mapper = mapper;
-    }
 
     @TrackMethod
     @Transactional

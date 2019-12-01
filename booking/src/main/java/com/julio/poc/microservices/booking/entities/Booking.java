@@ -6,7 +6,10 @@ import java.util.UUID;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
@@ -24,8 +27,9 @@ public class Booking {
     @Id
     private UUID id;
 
-    @Column(name = "id_room")
-    private UUID idRoom;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_room")
+    private Room room;
 
     @OneToMany(
             cascade = CascadeType.ALL,
@@ -33,6 +37,13 @@ public class Booking {
             mappedBy = "booking"
     )
     private List<BookingDates> dates;
+
+    @OneToMany(
+            cascade = CascadeType.ALL,
+            orphanRemoval = true,
+            mappedBy = "booking"
+    )
+    private List<BookingStates> states;
 
     @Email
     @Column(name = "guest_email")

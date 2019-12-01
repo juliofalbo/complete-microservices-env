@@ -9,22 +9,12 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 
 import com.julio.poc.microservices.searching.dtos.BookingGetDTO;
-import com.julio.poc.microservices.searching.dtos.BookingPostDTO;
 import com.julio.poc.microservices.searching.entities.Booking;
 
 @Mapper(componentModel = "spring")
 public interface BookingMapper {
     @Mappings({
-            @Mapping(target = "bookingIdentity.idRoom", source = "idRoom"),
-            @Mapping(target = "bookingIdentity.startDate", source = "startDate"),
-            @Mapping(target = "bookingIdentity.endDate", source = "endDate")
-    })
-    Booking toEntity(BookingPostDTO dto);
-
-    @Mappings({
-            @Mapping(target = "idRoom", source = "bookingIdentity.idRoom"),
-            @Mapping(target = "startDate", source = "bookingIdentity.startDate"),
-            @Mapping(target = "endDate", source = "bookingIdentity.endDate")
+            @Mapping(target = "idRoom", source = "room.id")
     })
     BookingGetDTO toDTO(Booking entity);
 

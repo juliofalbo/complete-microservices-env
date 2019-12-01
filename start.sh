@@ -35,7 +35,14 @@ print_blue "- Prometheus";
 print_blue "- RabbitMQ Cluster";
 print_blue "- Splunk";
 print_blue "- Postgres";
+print_blue "- Redis";
 print_blue "- CAdvisor";
+print_blue "- Zipkin";
+print_blue "- Eureka";
+
+echo;
+
+print_blue "Starting Grafana, Prometheus, RabbitMQ Cluster, Postgres, Redis, CAdvisor, Splunk";
 
 docker-compose up -d;
 
@@ -69,4 +76,4 @@ print_blue "Waiting Eureka startup";
 print_green "Eureka is running";
 echo;
 
-#docker-compose -f docker-compose-services.yml up;
+docker-compose -f docker-compose-services.yml up;

@@ -31,6 +31,15 @@ public class BookingPostDTO {
     @Email(message = "Invalid Email")
     private String guestEmail;
 
+    @NotNull(message = "Payment information is required")
+    private String creditCardNumberEncrypted;
+
+    @NotNull(message = "Payment information is required")
+    private String expireDateEncrypted;
+
+    @NotNull(message = "Payment information is required")
+    private String ccvEncrypted;
+
     public UUID getIdRoom() {
         return UUID.fromString(idRoom);
     }

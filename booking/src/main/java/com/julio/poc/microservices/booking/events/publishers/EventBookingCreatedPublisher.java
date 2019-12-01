@@ -1,15 +1,15 @@
-package com.julio.poc.microservices.booking.service;
-
-import java.util.UUID;
+package com.julio.poc.microservices.booking.events.publishers;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import com.julio.poc.microservices.booking.entities.Booking;
+import com.julio.poc.microservices.booking.dtos.BookingPayloadDTO;
 import com.tradeshift.amqp.rabbit.handlers.RabbitTemplateHandler;
 import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 
 @Component
+@RequiredArgsConstructor
 public class EventBookingCreatedPublisher {
 
     @Value("${spring.rabbitmq.custom.booking-created.exchange}")
@@ -20,12 +20,8 @@ public class EventBookingCreatedPublisher {
 
     private final RabbitTemplateHandler rabbitTemplateHandler;
 
-    public EventBookingCreatedPublisher(RabbitTemplateHandler rabbitTemplateHandler) {
-        this.rabbitTemplateHandler = rabbitTemplateHandler;
-    }
-
-    public void sendEvent(@NonNull final UUID bookingId){
+    public void sendEvent(@NonNull final BookingPayloadDTO payload){
         rabbitTemplateHandler.getRabbitTemplate("booking-created")
-                .convertAndSend(exchange, routingKey, bookingId);
+                .convertAndSend(exchange, routingKey, payload);
     }
 }

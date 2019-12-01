@@ -141,7 +141,13 @@
         <dependency>
             <groupId>com.tradeshift</groupId>
             <artifactId>spring-rabbitmq-tuning-lib</artifactId>
-            <version>0.1.0</version>
+            <version>0.1.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.alturkovic.distributed-lock</groupId>
+            <artifactId>distributed-lock-redis</artifactId>
+            <version>1.2.2</version>
         </dependency>
 
     </dependencies>
@@ -166,6 +172,10 @@
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
+        </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </repository>
     </repositories>
 

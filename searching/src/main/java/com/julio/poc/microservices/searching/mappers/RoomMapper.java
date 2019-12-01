@@ -7,13 +7,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 
 import com.julio.poc.microservices.searching.dtos.RoomGetDTO;
-import com.julio.poc.microservices.searching.dtos.RoomPostDTO;
 import com.julio.poc.microservices.searching.entities.Room;
 
 @Mapper(componentModel = "spring")
 public interface RoomMapper {
-    Room toEntity(RoomPostDTO dto);
-
     RoomGetDTO toDTO(Room entity);
 
     List<RoomGetDTO> toDTO(List<Room> entities);

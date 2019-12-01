@@ -1,17 +1,22 @@
 package com.julio.poc.microservices.searching.entities;
 
 import java.time.LocalDateTime;
+import java.util.List;
+import java.util.UUID;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
-import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import javax.persistence.Version;
 import javax.validation.constraints.Email;
 
-
-import com.julio.poc.microservices.searching.vos.BookingIdentity;
 import lombok.Data;
 
 @Entity
@@ -19,8 +24,26 @@ import lombok.Data;
 @Data
 public class Booking {
 
-    @EmbeddedId
-    private BookingIdentity bookingIdentity;
+    @Id
+    private UUID id;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_room")
+    private Room room;
+
+    @OneToMany(
+            cascade = CascadeType.ALL,
+            orphanRemoval = true,
+            mappedBy = "booking"
+    )
+    private List<BookingDates> dates;
+
+    @OneToMany(
+            cascade = CascadeType.ALL,
+            orphanRemoval = true,
+            mappedBy = "booking"
+    )
+    private List<BookingStates> states;
 
     @Email
     @Column(name = "guest_email")
@@ -39,6 +62,7 @@ public class Booking {
 
     @PrePersist
     protected void onCreate() {
+        id = UUID.randomUUID();
         creationDate = LocalDateTime.now();
         lastUpdate = LocalDateTime.now();
     }

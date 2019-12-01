@@ -13,7 +13,7 @@ import com.julio.poc.microservices.booking.entities.BookingDates;
 public interface BookingDatesRepository extends JpaRepository<BookingDates, UUID> {
 
     @Query("select dates from BookingDates dates inner join Booking booking on dates.booking.id = booking.id" +
-            " where booking.idRoom = :roomId and date in :dates")
+            " where booking.room.id = :roomId and date in :dates")
     List<BookingDates> findBookingsByDatesAndRoom(@Param("roomId") UUID roomId, @Param("dates") List<LocalDate> dates);
 
 }

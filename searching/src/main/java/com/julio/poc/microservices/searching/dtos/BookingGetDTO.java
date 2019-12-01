@@ -15,6 +15,8 @@ import lombok.NoArgsConstructor;
 @Builder
 public class BookingGetDTO {
 
+    private UUID id;
+
     private UUID idRoom;
 
     private LocalDate startDate;
@@ -26,6 +28,5 @@ public class BookingGetDTO {
     private LocalDateTime creationDate;
 
     private LocalDateTime lastUpdate;
-
 
 }

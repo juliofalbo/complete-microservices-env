@@ -12,18 +12,16 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.julio.poc.microservices.booking.dtos.RoomPostDTO;
 import com.julio.poc.microservices.booking.service.RoomService;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/rooms")
 public class RoomResource {
 
     private final RoomService service;
-
-    public RoomResource(RoomService service) {
-        this.service = service;
-    }
 
     @PostMapping
     public ResponseEntity<Void> save(@Valid @RequestBody RoomPostDTO roomDTO) {

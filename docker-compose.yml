@@ -12,6 +12,8 @@ volumes:
   log_volume:
   postgresql_master_data:
     driver: local
+  postgresql_financial_data:
+    driver: local
 
 services:
   grafana:
@@ -131,6 +133,20 @@ services:
       - POSTGRESQL_PASSWORD=admin123
       - POSTGRESQL_MASTER_PORT_NUMBER=5432
       - ALLOW_EMPTY_PASSWORD=yes
+  postgresql-financial:
+    #https://github.com/bitnami/bitnami-docker-postgresql
+    image: 'bitnami/postgresql:12'
+    networks:
+      - "rabbitmq-prometheus"
+    ports:
+      - '5434:5432'
+    volumes:
+      - 'postgresql_financial_data:/bitnami/postgresql'
+    environment:
+      - POSTGRESQL_USERNAME=admin
+      - POSTGRESQL_PASSWORD=admin123
+      - POSTGRESQL_DATABASE=financial
+      - ALLOW_EMPTY_PASSWORD=yes
   postgresql-master-exporter:
     image: wrouesnel/postgres_exporter:v0.8.0
     networks:
@@ -153,6 +169,24 @@ services:
       - DATA_SOURCE_NAME=postgresql://readonly:readonly@postgresql-readonly:5432/booking?sslmode=disable
     depends_on:
       - postgresql-readonly
+  postgresql-financial-exporter:
+    image: wrouesnel/postgres_exporter:v0.8.0
+    networks:
+      - "rabbitmq-prometheus"
+    ports:
+      - 9189:9187
+    environment:
+      # Very Insecure client connection
+      - DATA_SOURCE_NAME=postgresql://admin:admin123@postgresql-financial:5434/financial?sslmode=disable
+    depends_on:
+      - postgresql-financial
+  redis:
+    image: redis:5
+    hostname: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - "rabbitmq-prometheus"
   splunk:
     image: splunk/splunk:7.3.0
     hostname: splunk

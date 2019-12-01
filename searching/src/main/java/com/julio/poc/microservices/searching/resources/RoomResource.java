@@ -1,13 +1,16 @@
 package com.julio.poc.microservices.searching.resources;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.UUID;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -53,8 +56,13 @@ public class RoomResource {
     }
 
     @GetMapping("/{id}")
-    public RoomGetDTO findById(@PathVariable("id") UUID id) {
-        return service.findById(id);
+    public ResponseEntity<RoomGetDTO> findById(@PathVariable("id") UUID id) {
+        return ResponseEntity.ok(service.findById(id));
+    }
+
+    @GetMapping("/{id}/dates")
+    public ResponseEntity<List<LocalDate>> findUnavailableDates(@PathVariable("id") UUID id) {
+        return ResponseEntity.ok(service.findUnavailableDates(id));
     }
 
 }
