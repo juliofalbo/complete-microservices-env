@@ -3,7 +3,7 @@ package com.julio.poc.microservices.financial.dtos;
 import java.io.Serializable;
 import java.util.UUID;
 
-import com.julio.poc.microservices.booking.enums.BookingStateEnum;
+import com.julio.poc.microservices.frontend.enums.BookingStateEnum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

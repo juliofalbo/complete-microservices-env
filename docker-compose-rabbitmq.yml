@@ -1,0 +1,32 @@
+# https://docs.docker.com/compose/compose-file/
+version: "3.6"
+
+# https://docs.docker.com/compose/compose-file/#networks
+networks:
+  rabbitmq-prometheus:
+
+services:
+  rabbitmq-zipkin: &rabbitmq
+    # https://hub.docker.com/r/pivotalrabbitmq/rabbitmq-prometheus/tags
+    image: pivotalrabbitmq/rabbitmq-prometheus:3.9.0-alpha.76-2019.10.30
+    networks:
+      - "rabbitmq-prometheus"
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+      - "15692:15692"
+    cap_add:
+      - ALL
+    hostname: rabbitmq-zipkin
+    environment:
+      RABBITMQ_ERLANG_COOKIE: rabbitmq-hotel
+    volumes:
+      - ./rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf:ro
+      - ./rabbitmq-definitions.json:/etc/rabbitmq/rabbitmq-definitions.json:ro
+  rabbitmq-business:
+    <<: *rabbitmq
+    hostname: rabbitmq-business
+    ports:
+      - "5673:5672"
+      - "15673:15672"
+      - "15693:15692"

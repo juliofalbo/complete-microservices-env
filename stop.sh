@@ -17,6 +17,8 @@ print_error "╚══════╝   ╚═╝    ╚═════╝ ╚�
 echo
 print_error "Stopping the Environment";
 
-docker-compose -f docker-compose-services.yml down -v;
+docker-compose -f docker-compose-backend-services.yml down -v;
+docker-compose -f docker-compose-frontend-service.yml down -v;
 docker-compose -f docker-compose-zipkin-eureka.yml down -v;
-docker-compose down -v;
+docker-compose -f docker-compose-rabbitmq.yml down -v;
+docker-compose -f docker-compose-infra.yml down -v;
