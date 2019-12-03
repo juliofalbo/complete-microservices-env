@@ -35,14 +35,15 @@ public class RoomResource {
     }
 
     @GetMapping
-    public Page<RoomGetDTO> findAll(@RequestParam(value = "page", required = false, defaultValue = "0") int page,
-                                    @RequestParam(value = "size", required = false, defaultValue = "10") int size,
-                                    @RequestParam(value = "description", required = false) String description,
-                                    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
-                                    @RequestParam(value = "creationDate", required = false) LocalDateTime startDate,
-                                    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
-                                    @RequestParam(value = "lastUpdate", required = false) LocalDateTime endDate,
-                                    @RequestParam(value = "perNightValue", required = false) BigDecimal perNightValue
+    public Page<RoomGetDTO> findAll(
+            @RequestParam(value = "page", required = false, defaultValue = "0") int page,
+            @RequestParam(value = "size", required = false, defaultValue = "10") int size,
+            @RequestParam(value = "description", required = false) String description,
+            @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
+            @RequestParam(value = "creationDate", required = false) LocalDateTime startDate,
+            @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
+            @RequestParam(value = "lastUpdate", required = false) LocalDateTime endDate,
+            @RequestParam(value = "perNightValue", required = false) BigDecimal perNightValue
     ) {
 
         Specification<Room> objectSpecification = SpecificationBuilder.init()
@@ -53,6 +54,20 @@ public class RoomResource {
                 .buildSpec();
 
         return service.search(PageRequest.of(page, size), objectSpecification);
+    }
+
+    @GetMapping("/available")
+    public List<RoomGetDTO> findAllAvailableRooms(
+            @RequestParam(value = "page", required = false, defaultValue = "0") int page,
+            @RequestParam(value = "size", required = false, defaultValue = "10") int size,
+            @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+            @RequestParam(value = "startDate") LocalDate startDate,
+            @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+            @RequestParam(value = "endDate") LocalDate endDate,
+            @RequestParam(value = "id", required = false) UUID id
+    ) {
+
+        return service.findAvailableRooms(PageRequest.of(page, size), id, startDate, endDate);
     }
 
     @GetMapping("/{id}")

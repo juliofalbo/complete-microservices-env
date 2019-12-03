@@ -19,7 +19,7 @@ services:
       - "8100:8100"
     environment:
       - "SPRING_PROFILES_ACTIVE=prod"
-      - "LOGGING_FILE=/logs/booking-application.log"
+      - "LOGGING_FILE=/logs/booking-1-application.log"
     networks:
       - "rabbitmq-prometheus"
     volumes:
@@ -29,6 +29,9 @@ services:
     container_name: booking-two
     ports:
       - "8101:8100"
+    environment:
+      - "SPRING_PROFILES_ACTIVE=prod"
+      - "LOGGING_FILE=/logs/booking-2-application.log"
   searching:
     container_name: searching
     build:

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-us" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Hotel JFalbo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
+
+	<link rel="stylesheet" href="/css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="/css/animate.css">
+
+	<link rel="stylesheet" href="/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="/css/magnific-popup.css">
+
+	<link rel="stylesheet" href="/css/aos.css">
+
+	<link rel="stylesheet" href="/css/ionicons.min.css">
+
+	<link rel="stylesheet" href="/css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="/css/jquery.timepicker.css">
+
+
+	<link rel="stylesheet" href="/css/flaticon.css">
+	<link rel="stylesheet" href="/css/icomoon.css">
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div th:replace="fragments/nav.html :: nav"></div>
+
+<div class="hero-wrap" style="background-image: url('/images/bg_1.jpg');">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row no-gutters slider-text d-flex align-itemd-end justify-content-center">
+			<div class="col-md-9 ftco-animate text-center d-flex align-items-end justify-content-center">
+				<div class="text">
+					<p class="breadcrumbs mb-2"><span class="mr-2"><a href="/">Home</a></span></p>
+					<h1 class="mb-4 bread">Rooms</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<section class="ftco-section bg-light">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9">
+				<div class="row">
+					<div th:if="${errorMessage}" class="alert alert-danger" role="alert"><span th:text="${errorMessage}"></span></div>
+					<div th:if="${successMessage}" class="alert alert-success" role="alert"><span th:text="${successMessage}"></span></div>
+					<div class="col-sm col-md-6 col-lg-4 ftco-animate" th:each="room : ${rooms}" th:unless="${errorMessage}">
+						<div class="room">
+							<a href="#" class="img d-flex justify-content-center align-items-center"
+							   style="background-image: url(/images/room-1.jpg);">
+								<div class="icon d-flex justify-content-center align-items-center">
+									<span class="icon-search2"></span>
+								</div>
+							</a>
+							<div class="text p-3 text-center">
+								<h3 class="mb-3" th:text="${room.name}"></h3>
+								<p>$<span class="price mr-2"
+										  th:text="${#numbers.formatDecimal(room.perNightValue, 0, 'COMMA', 2, 'POINT')}"></span>
+									<span class="per">per night</span></p>
+								<ul class="list">
+									<li><span>Size:</span> 45 m2</li>
+									<li><span>View:</span> Sea View</li>
+									<li><span>Bed:</span> 1</li>
+								</ul>
+								<hr>
+								<p class="pt-1"><a th:href="${'/room/' + room.id + '/booking/' + startDate + '/' + endDate}" class="btn-custom">Book Now <span
+										class="icon-long-arrow-right"></span></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 sidebar">
+				<div class="sidebar-wrap bg-light ftco-animate">
+					<h3 class="heading mb-4">Advanced Search</h3>
+					<form action="/rooms/available">
+						<div class="fields">
+							<div class="form-group">
+								<input type="text" id="startDate" name="startDate" class="form-control checkin_date"
+									   placeholder="Check In Date" th:value="${startDate}" required>
+							</div>
+							<div class="form-group">
+								<input type="text" id="endDate" name="endDate" class="form-control checkout_date"
+									   placeholder="Check Out Date" th:value="${endDate}" required>
+							</div>
+							<div class="form-group">
+								<div class="select-wrap one-third">
+									<div class="icon"><span class="ion-ios-arrow-down"></span></div>
+									<select name="roomId" id="roomId" class="form-control">
+										<option value="all">All</option>
+										<option th:each="room : ${allRooms}" th:value="${room.id}" th:text="${room.name}" th:selected="${room.id.toString().equals(roomId)}"></option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<input type="submit" value="Search" class="btn btn-primary py-3 px-5">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div th:replace="fragments/footer.html :: footer"></div>
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen">
+	<svg class="circular" width="48px" height="48px">
+		<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+		<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00"/>
+	</svg>
+</div>
+
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/jquery.waypoints.min.js"></script>
+<script src="/js/jquery.stellar.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/jquery.magnific-popup.min.js"></script>
+<script src="/js/aos.js"></script>
+<script src="/js/jquery.animateNumber.min.js"></script>
+<script src="/js/bootstrap-datepicker.js"></script>
+<script src="/js/scrollax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<script src="/js/google-map.js"></script>
+<script src="/js/main.js"></script>
+
+</body>
+</html>

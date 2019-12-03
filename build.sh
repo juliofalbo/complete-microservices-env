@@ -1,4 +1,4 @@
-x#!/usr/bin/env bash
+#!/usr/bin/env bash
 
 function print_blue() {
     echo -e "\e[34m$1\e[0m"

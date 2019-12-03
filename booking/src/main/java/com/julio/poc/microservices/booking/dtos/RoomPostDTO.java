@@ -13,6 +13,9 @@ import lombok.NoArgsConstructor;
 @Data
 public class RoomPostDTO {
 
+    @Size(message = "The name should have at least 5 characters", min = 5)
+    private String name;
+
     @Size(message = "The description should have at least 5 characters", min = 5)
     private String description;
 

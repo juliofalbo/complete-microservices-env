@@ -18,6 +18,8 @@ public class RoomGetDTO {
 
     private String description;
 
+    private String name;
+
     private BigDecimal perNightValue;
 
     private LocalDateTime creationDate;

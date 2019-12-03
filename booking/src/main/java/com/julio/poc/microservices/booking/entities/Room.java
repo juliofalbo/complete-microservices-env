@@ -32,6 +32,8 @@ public class Room {
     )
     private List<Booking> bookings;
 
+    private String name;
+
     private String description;
 
     private BigDecimal perNightValue;

@@ -1,5 +1,6 @@
 CREATE TABLE rooms (
     id UUID PRIMARY KEY,
+    name TEXT NOT NULL,
     description TEXT NOT NULL,
     per_night_value DECIMAL NOT NULL,
     creation_date TIMESTAMP NOT NULL,

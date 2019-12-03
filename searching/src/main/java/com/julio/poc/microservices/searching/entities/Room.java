@@ -14,6 +14,9 @@ import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import javax.persistence.Version;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
 import lombok.Data;
 
 @Entity
@@ -30,6 +33,8 @@ public class Room {
             mappedBy = "room"
     )
     private List<Booking> bookings;
+
+    private String name;
 
     private String description;
 
