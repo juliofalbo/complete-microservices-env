@@ -1,0 +1,26 @@
+# https://docs.docker.com/compose/compose-file/
+version: "3.6"
+
+# https://docs.docker.com/compose/compose-file/#networks
+networks:
+  rabbitmq-prometheus:
+
+# https://docs.docker.com/compose/compose-file/#volumes
+volumes:
+  log_volume:
+
+services:
+  frontend:
+    container_name: frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8400:8400"
+    environment:
+      - "SPRING_PROFILES_ACTIVE=prod"
+      - "LOGGING_FILE=/logs/frontend-application.log"
+    networks:
+      - "rabbitmq-prometheus"
+    volumes:
+      - log_volume:/logs

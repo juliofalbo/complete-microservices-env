@@ -44,7 +44,7 @@ echo;
 
 print_blue "Starting Grafana, Prometheus, RabbitMQ Cluster, Postgres, Redis, CAdvisor, Splunk";
 
-docker-compose up -d;
+docker-compose -f docker-compose-infra.yml up -d;
 
 print_blue "Waiting the RabbitMQ Cluster creation";
 
@@ -76,4 +76,35 @@ print_blue "Waiting Eureka startup";
 print_green "Eureka is running";
 echo;
 
-docker-compose -f docker-compose-services.yml up;
+docker-compose -f docker-compose-backend-services.yml up -d;
+
+print_blue "Starting Booking Services";
+echo;
+
+./wait.sh http://localhost:8100/actuator/health
+./wait.sh http://localhost:8101/actuator/health
+./wait.sh http://localhost:8102/actuator/health
+
+print_blue "Starting Searching Services";
+echo;
+
+./wait.sh http://localhost:8200/actuator/health
+./wait.sh http://localhost:8201/actuator/health
+
+print_blue "Starting Financial Service";
+echo;
+
+./wait.sh http://localhost:8300/actuator/health
+
+print_green "All Backend services are running";
+echo;
+
+docker-compose -f docker-compose-frontend-service.yml up -d;
+
+print_blue "Starting Frontend Service";
+echo;
+
+./wait.sh http://localhost:8400/actuator/health
+
+print_green "Frontend Service is running";
+echo;

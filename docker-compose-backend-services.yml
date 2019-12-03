@@ -32,7 +32,15 @@ services:
     environment:
       - "SPRING_PROFILES_ACTIVE=prod"
       - "LOGGING_FILE=/logs/booking-2-application.log"
-  searching:
+  booking-three:
+    <<: *booking
+    container_name: booking-three
+    ports:
+      - "8102:8100"
+    environment:
+      - "SPRING_PROFILES_ACTIVE=prod"
+      - "LOGGING_FILE=/logs/booking-3-application.log"
+  searching-one: &searching
     container_name: searching
     build:
       context: ./searching
@@ -46,6 +54,14 @@ services:
       - "rabbitmq-prometheus"
     volumes:
       - log_volume:/logs
+  searching-two:
+    <<: *searching
+    container_name: searching-two
+    ports:
+      - "8201:8200"
+    environment:
+      - "SPRING_PROFILES_ACTIVE=prod"
+      - "LOGGING_FILE=/logs/searching-2-application.log"
   financial:
     container_name: financial
     build:
