@@ -1,5 +1,6 @@
 package com.julio.poc.microservices.searching.service;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -8,7 +9,6 @@ import java.util.UUID;
 import java.util.stream.Collectors;
 
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
@@ -21,6 +21,7 @@ import com.julio.poc.microservices.searching.entities.Room;
 import com.julio.poc.microservices.searching.mappers.RoomMapper;
 import com.julio.poc.microservices.searching.repositories.BookingDatesRepository;
 import com.julio.poc.microservices.searching.repositories.RoomRepository;
+import com.julio.poc.microservices.searching.specifications.builder.SpecificationBuilder;
 import com.julio.poc.microservices.searching.utils.DateUtils;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
@@ -37,7 +38,12 @@ public class RoomService {
 
     @TrackMethod
     @Transactional(readOnly = true)
-    public Page<RoomGetDTO> search(@NonNull final Pageable pageable, @NonNull final Specification<Room> specification) {
+    public Page<RoomGetDTO> search(@NonNull final Pageable pageable, String name, String description, BigDecimal perNightValue) {
+        Specification<Room> specification = SpecificationBuilder.init()
+                .withEqualFilter("name", name)
+                .withLikeFilter("description", description)
+                .withEqualFilter("perNightValue", perNightValue)
+                .buildSpec();
         return mapper.toDTO(repository.findAll(specification, pageable));
     }
 
@@ -55,8 +61,7 @@ public class RoomService {
 
     @TrackMethod
     @Transactional(readOnly = true)
-    public List<RoomGetDTO> findAvailableRooms(PageRequest of,
-                                               final UUID id,
+    public List<RoomGetDTO> findAvailableRooms(final UUID id,
                                                @NonNull final LocalDate startDate,
                                                @NonNull final LocalDate endDate) {
         if (Objects.isNull(id)) {

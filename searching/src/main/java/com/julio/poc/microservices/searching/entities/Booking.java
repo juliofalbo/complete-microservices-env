@@ -18,11 +18,18 @@ import javax.persistence.Version;
 import javax.validation.constraints.Email;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "bookings")
 @Data
+@NoArgsConstructor
 public class Booking {
+
+    public Booking(Room room, String guestEmail) {
+        this.room = room;
+        this.guestEmail = guestEmail;
+    }
 
     @Id
     private UUID id;

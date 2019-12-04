@@ -17,9 +17,4 @@ public class FinancialApplication {
         SpringApplication.run(FinancialApplication.class, args);
     }
 
-    @Bean
-    public Sampler defaultSampler() {
-        return Sampler.ALWAYS_SAMPLE;
-    }
-
 }

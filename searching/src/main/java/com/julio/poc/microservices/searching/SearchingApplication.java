@@ -17,9 +17,4 @@ public class SearchingApplication {
         SpringApplication.run(SearchingApplication.class, args);
     }
 
-    @Bean
-    public Sampler defaultSampler() {
-        return Sampler.ALWAYS_SAMPLE;
-    }
-
 }

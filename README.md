@@ -8,7 +8,11 @@ There are thousands of definitions out there about what are microservices, but t
 >**James Lewis and Martin Fowler**
 
 # What is this?
-This is a whole environment of a Microservices Architecture using Spring Cloud, Grafana, Prometheus, Postgres Replication Strategy and RabbitMQ.
+This is a whole environment of a Microservices Architecture. Here you can find the implementation of a lot of "fancy" patterns that we can find like **CQRS**, **Distributed Lock**, **Domain Events**, etc.
+
+## Bounded Context
+![ContextMap.png](ContextMap.png)
+
 
 ## Architecture Diagram
 ![HotelBookingSystemArchitecture.png](HotelBookingSystemArchitecture.png)
@@ -44,6 +48,7 @@ _Note: Doing this you will loose all your data_
 - **Flyway** as Database Migration Tool
 - **Splunk** as Log Analysis Platform
 - **Redis** to handle Distributed Lock
+- **Swagger** to create an OpenAPI documentation
 
 ## Ports
 
@@ -64,10 +69,64 @@ _Note: Doing this you will loose all your data_
 | Netflix Eureka | 8761 |
 | Zipkin | 9411 |
 
+## Distributed Lock Test
+In the root folder we have a file called `CreateBookingConcurrencyTest.jmx`. So, this is a [JMeter](https://jmeter.apache.org/) that can be easily imported and the only thing that you should do is change the `room id` for the tests.
+With this test it is possible to see that the booking service is queuing the requests based on the distributed lock on Redis and treating the concurrency issue.  
+
+# Links
+- Grafana Dashboards
+  - http://localhost:3000/dashboards
+- All monitored services
+  - http://localhost:9090/targets
+- Splunk
+  - http://localhost:8000
+- RabbitMQ UI
+  - http://localhost:15672
+  - http://localhost:15673
+- Zipkin
+  - http://localhost:9411
+- Eureka
+  - http://localhost:8761
+- Booking Swagger
+  - http://localhost:8100/swagger-ui.html
+  - http://localhost:8101/swagger-ui.html
+  - http://localhost:8102/swagger-ui.html
+- Searching Swagger
+  - http://localhost:8200/swagger-ui.html
+  - http://localhost:8201/swagger-ui.html
+- Frontend
+  - http://localhost:8400
+ 
+## TODO List
+
+- [x] [DDD Study](https://medium.com/tradeshift-engineering/my-vision-as-a-software-engineer-about-ddd-domain-driven-design-2f36ec18a1ec)
+- [x] Create [RabbitMQ Cluster](https://www.rabbitmq.com/clustering.html)
+- [x] Create [https://grafana.com/](Grafana) and [Prometheus](https://prometheus.io/)
+- [x] Create Postgres Replication Strategy
+- [x] Create a Service Discovery ([Eureka](https://www.baeldung.com/spring-cloud-netflix-eureka))
+- [x] Create Booking Service
+- [x] Create Searching Service
+- [x] Create [Distributed Lock with Redis](https://redis.io/topics/distlock)
+- [x] Create [Domain Events](https://medium.com/tradeshift-engineering/my-vision-as-a-software-engineer-about-ddd-domain-driven-design-part-2-973bcf5a9848)
+- [x] Create [Retry Strategy and DLQ Strategy](https://github.com/Tradeshift/spring-rabbitmq-tuning/wiki/Queues-Strategy) for RabbitMQ messages
+- [x] Create Financial Service
+- [x] Creating Frontend
+- [x] Creating Retry Strategy for HTTP requests ([Feign](https://spring.io/projects/spring-cloud-openfeign))
+- [x] Create Distributed Tracing with [Zipkin](https://zipkin.io/)
+- [x] Create and Integrate [Splunk](https://www.splunk.com/) with all Services
+- [x] Integrate Prometheus with: RabbitMQ Cluster, All Postgres containers, All Services containers, Zipkin
+- [x] Create a [docker-compose](https://docs.docker.com/compose/) to up the whole environment
+- [x] Add [embedded RabbitMQ and embedded Redis](https://github.com/testcontainers/testcontainers-spring-boot) for test purpose
+- [x] Create Dashboards on Grafana for all services in Prometheus
+- [ ] Create more Unit tests to cover more classes and scenarios
+- [ ] Implement [Twitter Diffy](https://github.com/twitter/diffy) to test changes
+- [ ] Implement Integration Test with [Karate (Cucumber)](https://github.com/intuit/karate)
+- [ ] Create more Unit tests to cover more classes and scenarios
+- [ ] Create business metrics on the Services
+
 ## References
 
 - [Microservices Resource Guide - Martin Fowler](https://martinfowler.com/microservices/)
-- [Master Microservices with Spring Boot and Spring Cloud - in28Minutes](https://www.udemy.com/microservices-with-spring-boot-and-spring-cloud/)
-- [Frontend Template](https://colorlib.com/wp/template/deluxe/)
+- [Frontend Template - Delux by Colorlib](https://colorlib.com/wp/template/deluxe/)
 - [Distributed Lock](https://redis.io/topics/distlock)
 - [Spring Distributed Lock Lib](https://github.com/alturkovic/distributed-lock)

@@ -17,8 +17,6 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import com.julio.poc.microservices.booking.exception.ValidationException;
-import feign.FeignException;
-import feign.codec.DecodeException;
 import lombok.extern.slf4j.Slf4j;
 
 @RestControllerAdvice
@@ -71,20 +69,6 @@ public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
         log.error("IllegalArgumentException on endpoint {} due {}", request.getContextPath(), ex);
         APIExceptionResponse APIExceptionResponse = new APIExceptionResponse(new Date(), ex.getMessage(), request.getDescription(false));
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(APIExceptionResponse);
-    }
-
-    @ExceptionHandler(FeignException.class)
-    private ResponseEntity<APIExceptionResponse> feignException(final FeignException ex, final WebRequest request) {
-        log.error("Invalid response of endpoint {} due {}", request.getContextPath(), ex);
-        APIExceptionResponse APIExceptionResponse = new APIExceptionResponse(new Date(), ex.getMessage(), request.getDescription(false));
-        return ResponseEntity.status(ex.status()).body(APIExceptionResponse);
-    }
-
-    @ExceptionHandler(DecodeException.class)
-    private ResponseEntity<APIExceptionResponse> feignDecodeException(final FeignException ex, final WebRequest request) {
-        log.error("Impossible to decode the response of url {} due {}", request.getContextPath(), ex);
-        APIExceptionResponse APIExceptionResponse = new APIExceptionResponse(new Date(), ex.getMessage(), request.getDescription(false));
-        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(APIExceptionResponse);
     }
 
     @Override

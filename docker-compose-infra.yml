@@ -153,7 +153,7 @@ services:
       - 9189:9187
     environment:
       # Very Insecure client connection
-      - DATA_SOURCE_NAME=postgresql://admin:admin123@postgresql-financial:5434/financial?sslmode=disable
+      - DATA_SOURCE_NAME=postgresql://admin:admin123@postgresql-financial:5432/financial?sslmode=disable
     depends_on:
       - postgresql-financial
   redis:
@@ -163,6 +163,14 @@ services:
       - "6379:6379"
     networks:
       - "rabbitmq-prometheus"
+  redis-exporter:
+    image: oliver006/redis_exporter:v1.3.4
+    ports:
+      - 9121:9121
+    networks:
+      - "rabbitmq-prometheus"
+    command:
+      - "--redis.addr=redis://redis:6379"
   splunk:
     image: splunk/splunk:7.3.0
     hostname: splunk

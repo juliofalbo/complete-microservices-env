@@ -16,11 +16,19 @@ import javax.persistence.Version;
 
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "rooms")
 @Data
+@NoArgsConstructor
 public class Room {
+
+    public Room(String name, String description, BigDecimal perNightValue) {
+        this.name = name;
+        this.description = description;
+        this.perNightValue = perNightValue;
+    }
 
     @Id
     private UUID id;

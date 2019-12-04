@@ -1,0 +1,1 @@
+INSERT INTO rooms values ('25286a13-3675-4bea-b4d5-5c8dd8362549', 'My First Room', 'If you want to add more rooms use swagger', 15.00, now(), now(), 0);

@@ -22,7 +22,7 @@ public class TrackMethodAnnotationAspect {
     }
 
     @Around("com.julio.poc.microservices.searching.aop.CommonJoinPointConfig.trackMethod()")
-    public Object populateUser(ProceedingJoinPoint joinPoint) throws Throwable {
+    public Object trackMethod(ProceedingJoinPoint joinPoint) throws Throwable {
         StopWatch watch = new StopWatch();
         Integer port = Integer.valueOf(Objects.requireNonNull(environment.getProperty("local.server.port")));
         log.info("Entering in the method {}, in class {}, running on port {}",

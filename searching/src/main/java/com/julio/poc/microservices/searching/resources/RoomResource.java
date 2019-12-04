@@ -38,28 +38,16 @@ public class RoomResource {
     public Page<RoomGetDTO> findAll(
             @RequestParam(value = "page", required = false, defaultValue = "0") int page,
             @RequestParam(value = "size", required = false, defaultValue = "10") int size,
+            @RequestParam(value = "name", required = false) String name,
             @RequestParam(value = "description", required = false) String description,
-            @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
-            @RequestParam(value = "creationDate", required = false) LocalDateTime startDate,
-            @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
-            @RequestParam(value = "lastUpdate", required = false) LocalDateTime endDate,
             @RequestParam(value = "perNightValue", required = false) BigDecimal perNightValue
     ) {
 
-        Specification<Room> objectSpecification = SpecificationBuilder.init()
-                .withLikeFilter("description", description)
-                .withEqualFilter("creationDate", startDate)
-                .withEqualFilter("lastUpdate", endDate)
-                .withEqualFilter("perNightValue", perNightValue)
-                .buildSpec();
-
-        return service.search(PageRequest.of(page, size), objectSpecification);
+        return service.search(PageRequest.of(page, size), name, description, perNightValue);
     }
 
     @GetMapping("/available")
     public List<RoomGetDTO> findAllAvailableRooms(
-            @RequestParam(value = "page", required = false, defaultValue = "0") int page,
-            @RequestParam(value = "size", required = false, defaultValue = "10") int size,
             @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
             @RequestParam(value = "startDate") LocalDate startDate,
             @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
@@ -67,7 +55,7 @@ public class RoomResource {
             @RequestParam(value = "id", required = false) UUID id
     ) {
 
-        return service.findAvailableRooms(PageRequest.of(page, size), id, startDate, endDate);
+        return service.findAvailableRooms(id, startDate, endDate);
     }
 
     @GetMapping("/{id}")

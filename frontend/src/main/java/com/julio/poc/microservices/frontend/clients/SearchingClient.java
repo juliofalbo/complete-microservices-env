@@ -25,11 +25,7 @@ public interface SearchingClient {
             @RequestParam("page") int page,
             @RequestParam("size") int size,
             @RequestParam("idRoom") UUID idRoom,
-            @RequestParam("guestEmail") String guestEmail,
-            @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
-            @RequestParam("startDate") LocalDate startDate,
-            @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
-            @RequestParam("endDate") LocalDate endDate
+            @RequestParam("guestEmail") String guestEmail
     );
 
     @GetMapping("/rooms/{id}")

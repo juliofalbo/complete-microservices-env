@@ -53,18 +53,6 @@
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-            <version>2.1.4.RELEASE</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-            <version>2.1.4.RELEASE</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
             <version>2.1.4.RELEASE</version>
         </dependency>
@@ -148,6 +136,27 @@
             <groupId>com.github.alturkovic.distributed-lock</groupId>
             <artifactId>distributed-lock-redis</artifactId>
             <version>1.2.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+            <version>1.4.199</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.playtika.testcontainers</groupId>
+            <artifactId>embedded-rabbitmq</artifactId>
+            <version>1.35</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.playtika.testcontainers</groupId>
+            <artifactId>embedded-redis</artifactId>
+            <version>1.35</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>

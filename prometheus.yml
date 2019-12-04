@@ -35,6 +35,11 @@ scrape_configs:
       - targets:
           - 'postgresql-master-exporter:9187'
           - 'postgresql-slave-exporter:9187'
+          - 'postgresql-financial-exporter:9187'
+  - job_name: 'redis'
+    static_configs:
+      - targets:
+          - 'redis-exporter:9121'
   - job_name: 'zipkin'
     scrape_interval: 5s
     metrics_path: '/prometheus'
@@ -45,4 +50,10 @@ scrape_configs:
     static_configs:
       - targets:
           - 'eureka:8761'
-          - 'booking:8100'
+          - 'booking-one:8100'
+          - 'booking-two:8100'
+          - 'booking-three:8100'
+          - 'searching-one:8200'
+          - 'searching-two:8200'
+          - 'financial:8300'
+          - 'frontend:8400'

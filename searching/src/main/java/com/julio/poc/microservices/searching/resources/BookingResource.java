@@ -37,20 +37,9 @@ public class BookingResource {
                                        @RequestParam(value = "size", required = false, defaultValue = "10") int size,
                                        @RequestParam(value = "idRoom", required = false) UUID idRoom,
                                        @RequestParam(value = "guestEmail", required = false) String guestEmail,
-                                       @RequestParam(value = "state", required = false) String state,
-                                       @RequestParam(value = "creationDate", required = false) LocalDateTime creationDate,
-                                       @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
-                                       @RequestParam(value = "lastUpdate", required = false) LocalDateTime lastUpdate
+                                       @RequestParam(value = "state", required = false) String state
                               ){
-        Specification<Booking> objectSpecification = SpecificationBuilder.init()
-                .withEqualInSubclassFilter(new FieldIn("room", "id"), idRoom)
-                .withEqualInListFieldFilter(new FieldIn("states", "state"), state)
-                .withEqualFilter("guestEmail", guestEmail)
-                .withEqualFilter("creationDate", creationDate)
-                .withEqualFilter("lastUpdate", lastUpdate)
-                .buildSpec();
-
-        return service.search(PageRequest.of(page, size), objectSpecification);
+        return service.search(PageRequest.of(page, size), idRoom, guestEmail, state);
     }
 
 }
