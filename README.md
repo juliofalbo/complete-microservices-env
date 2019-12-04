@@ -121,7 +121,7 @@ With this test it is possible to see that the booking service is queuing the req
 - [ ] Create more Unit tests to cover more classes and scenarios
 - [ ] Implement [Twitter Diffy](https://github.com/twitter/diffy) to test changes
 - [ ] Implement Integration Test with [Karate (Cucumber)](https://github.com/intuit/karate)
-- [ ] Create more Unit tests to cover more classes and scenarios
+- [ ] Create Auth service with [Keycloack](https://www.keycloak.org/)
 - [ ] Create business metrics on the Services
 
 ## References
