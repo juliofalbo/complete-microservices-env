@@ -25,10 +25,11 @@ This is a whole environment of a Microservices Architecture. Here you can find t
   - `git clone git@github.com:juliofalbo/complete-microservices-env.git`
 - Build the services
   - `./build.sh`
+  - Tip: Run this command and go to take a coffee... or 2...
 - Start the whole environment
   - `./start.sh`
   
-_Note: If you want build and run just call `./start true`_
+_Note: If you want to build and run just call `./start.sh true`_
 
 ### Stop
 - Stop all services keeping the volumes (preserving data)
