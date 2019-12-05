@@ -42,21 +42,32 @@ public class BookingServiceTests {
     @Autowired
     private BookingService bookingService;
 
+    @Autowired
+    private RabbitTemplateHandler rabbitTemplateHandler;
+
     @Test
     public void should_return_zero_bookings() throws InterruptedException {
         Room room = roomRepository.save(new Room("My Room", "Desc", BigDecimal.TEN));
-        bookingService.save(BookingPostDTO.builder()
-                .idRoom(room.getId().toString())
-                .startDate(LocalDate.now())
-                .endDate(LocalDate.now().plusDays(2))
-                .guestEmail("j@j.com")
-                .ccvEncrypted("fasdfsafasgas")
-                .creditCardNumberEncrypted("asfasfsafgas")
-                .expireDateEncrypted("safsafsafasgfas")
-                .build(),
+        Booking booking = bookingService.save(BookingPostDTO.builder()
+                        .idRoom(room.getId().toString())
+                        .startDate(LocalDate.now())
+                        .endDate(LocalDate.now().plusDays(2))
+                        .guestEmail("j@j.com")
+                        .ccvEncrypted("fasdfsafasgas")
+                        .creditCardNumberEncrypted("asfasfsafgas")
+                        .expireDateEncrypted("safsafsafasgfas")
+                        .build(),
                 room.getId().toString()
         );
         Assert.assertEquals(1, repository.findAll().size());
+
+        bookingService.sendEventBookingCreated(booking, "ssafa", "asfasfa", "asfsaf");
+
+        Thread.sleep(1000);
+
+        Message message = rabbitTemplateHandler.getRabbitTemplate("booking-created").receive("queue.booking.created");
+        Assert.assertNotNull(message);
+        Assert.assertEquals(message.getMessageProperties().getReceivedExchange(), "ex.bus.topic");
     }
 
     @Test(expected = ValidationException.class)
