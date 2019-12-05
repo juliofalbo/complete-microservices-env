@@ -31,10 +31,11 @@ This is a whole environment of a Microservices Architecture. Here you can find t
 _Note: If you want build and run just call `./start true`_
 
 ### Stop
-- Stop all services **removing all volumes**
-  - `./stop.sh`
+- Stop all services keeping the volumes (preserving data)
+  - `./stop.sh` 
+- Stop all services **removing all volumes** (it means that you will remove all data)
+  - `./stop.sh true`
 
-_Note: Doing this you will loose all your data_
 
 ## Stack
 - **RabbitMQ** as a Message Broker
