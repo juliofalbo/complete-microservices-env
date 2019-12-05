@@ -1,0 +1,13 @@
+language: java
+jdk: openjdk11
+
+jobs:
+  include:
+    - stage: 'Testing Booking'
+      script: cd booking && mvn clean test
+    - stage: 'Testing Searching'
+      script: cd searching && mvn clean test
+    - stage: 'Testing Financial'
+      script: cd financial && mvn clean test
+    - stage: 'Testing Frontend'
+      script: cd frontend && mvn clean test
