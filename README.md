@@ -9,7 +9,7 @@ There are thousands of definitions out there about what are microservices, but t
 >**James Lewis and Martin Fowler**
 
 # What is this?
-This is a whole environment of a Microservices Architecture. Here you can find the implementation of a lot of "fancy" patterns that we can find like **CQRS**, **Distributed Lock**, **Domain Events**, etc.
+This is a whole environment of a Microservices Architecture. Here you can find the implementation of a lot of "fancy" patterns like **CQRS**, **Distributed Lock**, **Domain Events**, etc.
 
 ## Bounded Context
 ![ContextMap.png](ContextMap.png)
@@ -29,13 +29,13 @@ This is a whole environment of a Microservices Architecture. Here you can find t
 - Start the whole environment
   - `./start.sh`
   
-_Note: If you want to build and run just call `./start.sh true`_
+_Note: If you want to build and run just call `./start.sh --build`_
 
 ### Stop
 - Stop all services keeping the volumes (preserving data)
   - `./stop.sh` 
 - Stop all services **removing all volumes** (it means that you will remove all data)
-  - `./stop.sh true`
+  - `./stop.sh --remove-volumes`
 
 
 ## Stack
@@ -99,6 +99,25 @@ With this test it is possible to see that the booking service is queuing the req
   - http://localhost:8201/swagger-ui.html
 - Frontend
   - http://localhost:8400
+
+## Monitoring Config
+By default, we already have 6 dashboards showing the metrics from Spring Boot Apps, Postgres, RabbitMQ, Redis and Zipikin. 
+
+The dashboards are:
+- JVM Metrics
+- Postgres Metrics
+- RabbitMQ Metrics
+- Redis Metrics
+- Zipikin Metrics
+- Spring Boot Metrics
+
+When you try to access Grafana it will ask you to log in and the credentials are:
+
+- Username: **admin**
+- Password: **admin**
+
+If you want to change it, just change the value of the env vars `GF_SECURITY_ADMIN_USER` and `GF_SECURITY_ADMIN_PASSWORD` in the Grafana's Service on `docker-compose-infra.yml`.
+
  
 ## TODO List
 

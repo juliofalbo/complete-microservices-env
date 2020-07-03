@@ -36,7 +36,9 @@ services:
       # https://grafana.com/plugins/michaeldmoore-multistat-panel
       # https://grafana.com/plugins/vonage-status-panel
       # https://grafana.com/plugins/yesoreyeram-boomtable-panel
-      GF_INSTALL_PLUGINS: "flant-statusmap-panel,grafana-piechart-panel"
+      - "GF_INSTALL_PLUGINS=flant-statusmap-panel,grafana-piechart-panel"
+      - "GF_SECURITY_ADMIN_USER=admin"
+      - "GF_SECURITY_ADMIN_PASSWORD=admin"
   prometheus:
     # https://hub.docker.com/r/prom/prometheus/tags
     image: prom/prometheus:v2.13.1

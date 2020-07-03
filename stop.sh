@@ -19,7 +19,7 @@ print_error "╚══════╝   ╚═╝    ╚═════╝ ╚�
 echo
 print_error "Stopping the Environment";
 
-if [[ "$REMOVEVOLUMES" = true ]]
+if [[ "$REMOVEVOLUMES" = '--remove-volumes' ]]
 then
     print_error "Removing all Volumes (you will lose your data)";
     docker-compose -f docker-compose-backend-services.yml down -v;

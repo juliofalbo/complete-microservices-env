@@ -23,7 +23,7 @@ print_green "╚══════╝╚══════╝   ╚═╝    ╚
 echo
 
 
-if [[ "$BUILD" = true ]] ; then
+if [[ "$BUILD" = '--build' ]] ; then
     print_blue "Starting docker build"
     echo;
     ./build.sh
